@@ -45,19 +45,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.container, header p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100; }
+
+.heading h2 {
+  align-self: center;
+  width: 100%;
+  background: #232C33;
+  height: 50px;
+  text-align: center;
+  font-size: 2em;
+  color: #6683E1;
+  padding-top: 8px;
+  font-family: "DIN Pro Condensed Regular", monospace; }
+
 @font-face {
   font-family: 'DIN Pro Condensed Regular';
   font-style: normal;
   font-weight: normal;
   src: local("DIN Pro Condensed Regular"), url("../fonts/DINPro-Cond.woff") format("woff"); }
+@font-face {
+  font-family: "Hiragino Sans GB W3";
+  src: url("3b2646a48566403a55f62ceddbecbe18.eot");
+  /* IE9*/
+  src: url("../fonts/3b2646a48566403a55f62ceddbecbe18.ttf") format("truetype"), url("3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB W3") format("svg");
+  /* iOS 4.1- */ }
 * {
   box-sizing: border-box; }
   * a {
     text-decoration: none;
     color: black; }
-
-.container {
-  font-family: "DIN Pro Condensed Regular", monospace; }
 
 .container {
   width: 100vw;
@@ -100,15 +118,6 @@ header {
   align-content: center;
   width: 100%;
   margin-bottom: 25px; }
-  .heading h2 {
-    align-self: center;
-    width: 100%;
-    background: #232C33;
-    height: 50px;
-    text-align: center;
-    font-size: 2em;
-    color: #6683E1;
-    padding-top: 8px; }
   .heading .work-content {
     height: 300px;
     border: 2px solid black;
@@ -120,7 +129,8 @@ header {
   display: flex;
   flex: row wrap; }
   .about-content p {
-    font-size: 2em; }
+    font-size: 1.5em;
+    line-height: 1.2; }
   .about-content img {
     width: 50%;
     height: 50%; }

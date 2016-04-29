@@ -4,7 +4,13 @@
   font-weight: normal;
   src: local('DIN Pro Condensed Regular'), url('../fonts/DINPro-Cond.woff') format('woff');
 }
-
+@font-face {
+  font-family: "Hiragino Sans GB W3";
+  src: url("3b2646a48566403a55f62ceddbecbe18.eot"); /* IE9*/
+  src:
+  url("../fonts/3b2646a48566403a55f62ceddbecbe18.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB W3") format("svg"); /* iOS 4.1- */
+}
 * {
   box-sizing: border-box;
   a {
@@ -12,7 +18,9 @@
     color: black;
   }
 }
-.container {
-  font-family: $font-stack;
 
+.container {
+  @extend %text;
+  width: 100vw;
+  border: 1px solid blue;
 }

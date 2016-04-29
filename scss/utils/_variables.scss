@@ -1,7 +1,6 @@
 ////fonts
 $font-stack: 'DIN Pro Condensed Regular', monospace;
-
-
+$text-font: 'Roboto', sans-serif;
 //////colors
 
 $mid-blue: #6683E1;
@@ -13,3 +12,21 @@ $light-blue: #8AA0E8;
 $dark-grey: #232C33;
 
 $text-color: #4A4A4A;
+
+
+%text {
+  font-family: $text-font;
+  font-weight: 100;
+}
+
+%heading {
+  align-self: center;
+  width: 100%;
+  background: $dark-grey;
+  height: 50px;
+  text-align: center;
+  font-size: 2em;
+  color: $mid-blue;
+  padding-top: 8px;
+  font-family: $font-stack;
+}

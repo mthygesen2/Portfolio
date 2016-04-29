@@ -6,14 +6,7 @@
   width: 100%;
   margin-bottom: 25px;
   h2 {
-    align-self: center;
-    width: 100%;
-    background: $dark-grey;
-    height: 50px;
-    text-align: center;
-    font-size: 2em;
-    color: $mid-blue;
-    padding-top: 8px;
+    @extend %heading;
   }
   .work-content {
     height: 300px;
@@ -28,7 +21,8 @@
   display: flex;
   flex: row wrap;
   p{
-    font-size: 2em;
+    font-size: 1.5em;
+    line-height: 1.2;
   }
   img {
     width: 50%;
