@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   height: 50px;
   width: 100%;
+  background: $dark-grey;
   h2 {
     align-self: center;
     font-size: 2em;
+    color: $mid-blue;
   }
 }

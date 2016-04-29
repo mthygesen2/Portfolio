@@ -98,11 +98,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  background: #232C33; }
   .work h2 {
     align-self: center;
-    font-size: 2em; }
+    font-size: 2em;
+    color: #6683E1; }
 
 /*# sourceMappingURL=main.css.map */
