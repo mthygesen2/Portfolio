@@ -4,6 +4,7 @@
   justify-content: center;
   align-content: center;
   width: 100%;
+  margin-bottom: 25px;
   h2 {
     align-self: center;
     width: 100%;
@@ -23,6 +24,32 @@
 
 .about-content {
   border: 2px solid red;
-  height: 300px;
-      width: 100%;
+  width: 100%;
+  display: flex;
+  flex: row wrap;
+  p{
+    font-size: 2em;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.contact-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  #email {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  .icons {
+    a img {
+      margin: 10px 20px;
+      width: 50px;
+
+    }
+  }
 }
