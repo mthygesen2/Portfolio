@@ -1,13 +1,28 @@
-.work {
+.heading {
   display: flex;
+  flex-flow: column;
   justify-content: center;
-  align-items: center;
-  height: 50px;
+  align-content: center;
   width: 100%;
-  background: $dark-grey;
   h2 {
     align-self: center;
+    width: 100%;
+    background: $dark-grey;
+    height: 50px;
+    text-align: center;
     font-size: 2em;
     color: $mid-blue;
+    padding-top: 8px;
   }
+  .work-content {
+    height: 300px;
+    border: 2px solid black;
+    width: 100%;
+  }
+}
+
+.about-content {
+  border: 2px solid red;
+  height: 300px;
+      width: 100%;
 }

@@ -61,7 +61,6 @@ table {
 
 .container {
   width: 100vw;
-  height: 100vh;
   border: 1px solid blue; }
 
 nav {
@@ -94,16 +93,29 @@ header {
     padding: 0 20px;
     font-size: 1.8em; }
 
-.work {
+.heading {
   display: flex;
+  flex-flow: column;
   justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 100%;
-  background: #232C33; }
-  .work h2 {
+  align-content: center;
+  width: 100%; }
+  .heading h2 {
     align-self: center;
+    width: 100%;
+    background: #232C33;
+    height: 50px;
+    text-align: center;
     font-size: 2em;
-    color: #6683E1; }
+    color: #6683E1;
+    padding-top: 8px; }
+  .heading .work-content {
+    height: 300px;
+    border: 2px solid black;
+    width: 100%; }
+
+.about-content {
+  border: 2px solid red;
+  height: 300px;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
