@@ -1,3 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+@font-face {
+font-family: 'DIN Pro Condensed Regular';
+font-style: normal;
+font-weight: normal;
+src: local('DIN Pro Condensed Regular'), url('DINPro-Cond.woff') format('woff');
 }
