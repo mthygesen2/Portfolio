@@ -60,11 +60,59 @@ table {
   padding-top: 8px;
   font-family: "DIN Pro Condensed Regular", monospace; }
 
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 0; }
+  6% {
+    opacity: 1; }
+  11% {
+    opacity: .4; }
+  11.25% {
+    opacity: .6; }
+  11.5% {
+    opacity: .4; }
+  18% {
+    opacity: 1; }
+  18.5% {
+    opacity: .9; }
+  22% {
+    opacity: 1; }
+  38.5% {
+    opacity: 1; }
+  39% {
+    opacity: .8; }
+  42% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  60.5% {
+    opacity: 0; }
+  62% {
+    opacity: 0; }
+  63% {
+    opacity: .2; }
+  63.25% {
+    opacity: 0; }
+  65% {
+    opacity: 1; }
+  73% {
+    opacity: 1; }
+  75% {
+    opacity: .8; }
+  79% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 @font-face {
   font-family: 'DIN Pro Condensed Regular';
   font-style: normal;
   font-weight: normal;
   src: local("DIN Pro Condensed Regular"), url("../fonts/DINPro-Cond.woff") format("woff"); }
+@font-face {
+  font-family: 'Neon Lights';
+  src: url("../fonts/NEON LIGHTS.tff") format("tff"); }
 @font-face {
   font-family: "Hiragino Sans GB W3";
   src: url("3b2646a48566403a55f62ceddbecbe18.eot");
@@ -84,30 +132,41 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  width: 400px;
+  margin: 20px auto 0 auto;
+  width: 80%;
   height: 100px; }
   nav img {
     width: 100px; }
   nav a, nav span {
     font-family: "DIN Pro Condensed Regular", monospace;
     margin-left: 20px;
-    font-size: 2em; }
+    font-size: 3em; }
 
 header {
-  width: 100%;
+  width: 50%;
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   justify-content: center; }
-  header img {
-    width: auto;
-    height: 200px;
-    align-self: center; }
+  header #hello {
+    padding-left: 15px;
+    font-size: 8rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #EEB7DB;
+    font-family: 'Neon Lights', sans-serif;
+    text-shadow: 1px 1px 2px #DC00A0, 0 0 0.2em #ff10be, 0 0 1em #ff43cc, 0px -15px 20px #ff43cc;
+    animation: blink linear 5s; }
   header p {
     text-align: right;
     padding: 0 20px;
-    font-size: 1.8em; }
+    font-size: 2em; }
+  header a, header img {
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    margin-top: 20%; }
 
 .heading {
   display: flex;
