@@ -14,36 +14,3 @@
     width: 100%;
   }
 }
-
-.about-content {
-  border: 2px solid red;
-  width: 100%;
-  display: flex;
-  flex: row wrap;
-  p{
-    font-size: 1.5em;
-    line-height: 1.2;
-  }
-  img {
-    width: 50%;
-    height: 50%;
-  }
-}
-
-.contact-content {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  #email {
-    font-size: 2em;
-    margin: 20px 0;
-  }
-  .icons {
-    a img {
-      margin: 10px 20px;
-      width: 50px;
-
-    }
-  }
-}

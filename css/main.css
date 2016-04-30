@@ -78,7 +78,6 @@ table {
     color: black; }
 
 .container {
-  width: 100vw;
   border: 1px solid blue; }
 
 nav {
@@ -91,14 +90,13 @@ nav {
   nav img {
     width: 100px; }
   nav a, nav span {
-    font-family: 'DIN Pro Condensed Regular';
+    font-family: "DIN Pro Condensed Regular", monospace;
     margin-left: 20px;
     font-size: 2em; }
 
 header {
-  border: 1px solid red;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center; }
@@ -124,16 +122,32 @@ header {
     width: 100%; }
 
 .about-content {
-  border: 2px solid red;
+  padding: 15px;
   width: 100%;
   display: flex;
   flex: row wrap; }
   .about-content p {
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.2; }
   .about-content img {
     width: 50%;
     height: 50%; }
+
+.skills {
+  text-align: center;
+  display: flex;
+  flex-flow: column; }
+  .skills h3 {
+    color: #1944D8;
+    font-size: 2em; }
+  .skills ul {
+    margin: 5px;
+    display: flex; }
+  .skills .js {
+    display: flex;
+    flex-flow: column; }
+    .skills .js li {
+      align-self: flex-start; }
 
 .contact-content {
   display: flex;

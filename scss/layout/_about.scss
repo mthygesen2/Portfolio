@@ -1,0 +1,53 @@
+
+.about-content {
+  padding: 15px;
+  width: 100%;
+  display: flex;
+  flex: row wrap;
+  p{
+    font-size: 1.25em;
+    line-height: 1.2;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.skills {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  h3{
+    color: $bright-blue;
+    font-size: 2em;
+  }
+  ul {
+    margin: 5px;
+    display: flex;
+  }
+  .js {
+    display: flex;
+    flex-flow: column;
+    li {
+      align-self: flex-start;
+    }
+  }
+}
+.contact-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  #email {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  .icons {
+    a img {
+      margin: 10px 20px;
+      width: 50px;
+
+    }
+  }
+}
