@@ -14,6 +14,7 @@
   }
   ul {
     line-height: 1.2;
+    font-size: 1.2em;
   }
   #mao {
     align-self: center;
@@ -24,7 +25,15 @@
     border: 6px solid $dark-grey;
   }
 }
-
+.aboutImages {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+  }
+}
 .icons {
   display: flex;
   justify-content: center;

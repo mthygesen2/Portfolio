@@ -227,7 +227,8 @@ header {
     line-height: 1.2;
     padding: 10px; }
   .about-content ul {
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-size: 1.2em; }
   .about-content #mao {
     align-self: center;
     width: 50%;
@@ -235,6 +236,14 @@ header {
     max-width: 200px;
     border-radius: 50%;
     border: 6px solid #232C33; }
+
+.aboutImages {
+  display: flex;
+  justify-content: center; }
+  .aboutImages img {
+    width: 30%;
+    height: 30%;
+    padding: 5px; }
 
 .icons {
   display: flex;
