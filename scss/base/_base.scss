@@ -27,4 +27,5 @@
 
 .container {
   @extend %text;
+  min-width: 320px;
 }

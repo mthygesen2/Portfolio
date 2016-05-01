@@ -1,0 +1,31 @@
+
+.contact-content {
+  width: 100%;
+  margin: 10% 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    padding: 20px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #email {
+    font-size: 1.5em;
+    margin: 20px 0;
+    transition: all 0.5s ease-in-out;
+  }
+  #email:hover {
+    color: $bright-blue;
+  }
+}
+
+#contact-image {
+  @media  screen and (min-width: 759px) {
+    align-self: center;
+    width: 200px;
+    height: auto;
+    z-index: 999;
+  }
+}

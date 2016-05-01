@@ -1,5 +1,12 @@
-
+#about {
+  @media screen and (min-width: 760px) {
+    display: inline;
+    height: 80px;
+    font-size: 3.5em;
+  }
+}
 .about-content {
+
   padding: 15px;
   width: 100%;
   display: flex;
@@ -22,7 +29,7 @@
     height: 50%;
     max-width: 200px;
     border-radius: 50%;
-    border: 6px solid $dark-grey;
+    border: 1px solid $dark-grey;
   }
 }
 .aboutImages {
@@ -37,9 +44,15 @@
 .icons {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
   border-top: 1px solid $dark-grey;
+  @media  screen and (min-width: 760px) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $dark-grey;
+  }
   a {
     padding: 10px 10px 0 10px;
+
   }
   #resume {
     align-self: center;
@@ -51,43 +64,24 @@
     color: $bright-blue;
   }
 }
-
-.skills {
-  text-align: center;
-  display: flex;
-  flex-flow: column;
-  h3{
-    color: $bright-blue;
-    font-size: 2em;
-  }
-  ul {
-    margin: 5px;
-    display: flex;
-  }
-  .js {
-    display: flex;
-    flex-flow: column;
-    li {
-      align-self: flex-start;
-    }
-  }
-}
-.contact-content {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  p {
-    padding: 20px 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  #email {
-    font-size: 1.5em;
-    margin: 20px 0;
-    transition: all 0.5s ease-in-out;
-  }
-  #email:hover {
-    color: $bright-blue;
-  }
-}
+//
+// .skills {
+//   text-align: center;
+//   display: flex;
+//   flex-flow: column;
+//   h3{
+//     color: $bright-blue;
+//     font-size: 2em;
+//   }
+//   ul {
+//     margin: 5px;
+//     display: flex;
+//   }
+//   .js {
+//     display: flex;
+//     flex-flow: column;
+//     li {
+//       align-self: flex-start;
+//     }
+//   }
+// }

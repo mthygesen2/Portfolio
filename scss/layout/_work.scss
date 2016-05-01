@@ -1,16 +1,63 @@
+//heading for all sections///
 .heading {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin-bottom: 25px;
+  margin: 25px auto;
+  max-width: 800px;
   h2 {
     @extend %heading;
+    @media screen and (min-width: 760px) {
+      display: none;
+    }
   }
-  .work-content {
-    height: 300px;
-    border: 2px solid black;
-    width: 100%;
+}
+
+//start of work area///
+#work, #contact {
+  @media  screen and (min-width: 760px) {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+}
+.work-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 590px;
+  a img {
+    padding: 20px;
+    @media screen and (min-width: 760px) {
+      padding: 0;
+      align-self: center;
+    }
+  }
+}
+.wide {
+  width: 30%;
+  height: 500px;
+  padding: 150px;
+  background: $dark-grey;
+  display: none;
+  z-index: -1;
+  @media  screen and (min-width: 759px) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+#work-image {
+  @media  screen and (min-width: 759px) {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    z-index: 999;
   }
 }
