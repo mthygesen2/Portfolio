@@ -80,6 +80,10 @@ header .neonSign #hello, header .neonSign #h {
     opacity: 1; }
   80% {
     opacity: 0; }
+  95% {
+    opacity: 1; }
+  99% {
+    opacity: 0; }
   100% {
     opacity: 1; } }
 @keyframes blink2 {
@@ -97,7 +101,7 @@ header .neonSign #hello, header .neonSign #h {
     opacity: 0; }
   90% {
     opacity: .8; }
-  95% {
+  99% {
     opacity: 0; }
   100% {
     opacity: 1; } }
@@ -260,23 +264,8 @@ header {
   .icons #resume:hover {
     color: #1944D8; }
 
-.skills {
-  text-align: center;
-  display: flex;
-  flex-flow: column; }
-  .skills h3 {
-    color: #1944D8;
-    font-size: 2em; }
-  .skills ul {
-    margin: 5px;
-    display: flex; }
-  .skills .js {
-    display: flex;
-    flex-flow: column; }
-    .skills .js li {
-      align-self: flex-start; }
-
 .contact-content {
+  margin: 10% 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
