@@ -5,6 +5,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
   p, h3 {
     font-size: 1.25em;
     line-height: 1.2;
@@ -13,10 +15,11 @@
   ul {
     line-height: 1.2;
   }
-  img {
+  #mao {
     align-self: center;
     width: 50%;
     height: 50%;
+    max-width: 200px;
     border-radius: 50%;
     border: 6px solid $dark-grey;
   }
@@ -65,6 +68,11 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  p {
+    padding: 20px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
   #email {
     font-size: 1.5em;
     margin: 20px 0;
@@ -72,12 +80,5 @@
   }
   #email:hover {
     color: $bright-blue;
-  }
-  .icons {
-    a img {
-      margin: 10px 20px;
-      width: 50px;
-
-    }
   }
 }
