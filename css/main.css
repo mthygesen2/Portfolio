@@ -132,6 +132,9 @@ header .neonSign #hello, header .neonSign #h {
     text-decoration: none;
     color: black; }
 
+.container {
+  min-width: 320px; }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -212,11 +215,58 @@ header {
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin-bottom: 25px; }
-  .heading .work-content {
-    height: 300px;
-    border: 2px solid black;
-    width: 100%; }
+  margin: 25px auto;
+  max-width: 800px; }
+  @media screen and (min-width: 760px) {
+    .heading h2 {
+      display: none; } }
+
+@media screen and (min-width: 760px) {
+  #work, #contact {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 800px;
+    margin: 20px auto; } }
+
+.work-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 590px; }
+  .work-content a img {
+    padding: 20px; }
+    @media screen and (min-width: 760px) {
+      .work-content a img {
+        padding: 0;
+        align-self: center; } }
+
+.wide {
+  width: 30%;
+  height: 500px;
+  padding: 150px;
+  background: #232C33;
+  display: none;
+  z-index: -1; }
+  @media screen and (min-width: 759px) {
+    .wide {
+      display: flex;
+      justify-content: center;
+      align-content: center; } }
+
+@media screen and (min-width: 759px) {
+  #work-image {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    z-index: 999; } }
+
+@media screen and (min-width: 760px) {
+  #about {
+    display: inline;
+    height: 80px;
+    font-size: 3.5em; } }
 
 .about-content {
   padding: 15px;
@@ -239,7 +289,7 @@ header {
     height: 50%;
     max-width: 200px;
     border-radius: 50%;
-    border: 6px solid #232C33; }
+    border: 1px solid #232C33; }
 
 .aboutImages {
   display: flex;
@@ -254,6 +304,10 @@ header {
   justify-content: center;
   margin-top: 50px;
   border-top: 1px solid #232C33; }
+  @media screen and (min-width: 760px) {
+    .icons {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #232C33; } }
   .icons a {
     padding: 10px 10px 0 10px; }
   .icons #resume {
@@ -265,6 +319,7 @@ header {
     color: #1944D8; }
 
 .contact-content {
+  width: 100%;
   margin: 10% 0;
   display: flex;
   flex-flow: column;
@@ -280,5 +335,18 @@ header {
     transition: all 0.5s ease-in-out; }
   .contact-content #email:hover {
     color: #1944D8; }
+
+@media screen and (min-width: 759px) {
+  #contact-image {
+    align-self: center;
+    width: 200px;
+    height: auto;
+    z-index: 999; } }
+
+.resume {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 20px auto; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,12 @@
-
+#about {
+  @media screen and (min-width: 760px) {
+    display: inline;
+    height: 80px;
+    font-size: 3.5em;
+  }
+}
 .about-content {
+
   padding: 15px;
   width: 100%;
   display: flex;
@@ -22,7 +29,7 @@
     height: 50%;
     max-width: 200px;
     border-radius: 50%;
-    border: 6px solid $dark-grey;
+    border: 1px solid $dark-grey;
   }
 }
 .aboutImages {
@@ -39,8 +46,13 @@
   justify-content: center;
   margin-top: 50px;
   border-top: 1px solid $dark-grey;
+  @media  screen and (min-width: 760px) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $dark-grey;
+  }
   a {
     padding: 10px 10px 0 10px;
+
   }
   #resume {
     align-self: center;
