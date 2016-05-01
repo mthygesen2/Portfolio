@@ -1,6 +1,7 @@
 ////fonts
 $font-stack: 'DIN Pro Condensed Regular', monospace;
 $text-font: 'Roboto', sans-serif;
+$hello-font: 'Neon Lights', sans-serif;;
 //////colors
 
 $mid-blue: #6683E1;
@@ -16,6 +17,8 @@ $text-color: #4A4A4A;
 $neon-color: #EEB7DB;
 
 $shadow-color: #DC00A0;
+
+$light-grey: #e9e9e9;
 
 %text {
   font-family: $text-font;
@@ -66,4 +69,28 @@ $shadow-color: #DC00A0;
   79% { opacity: 1; }
 
   100% { opacity: 1; }
+}
+
+@keyframes blink2 {
+0% { opacity: 0; }
+
+  // flicker
+  5%  { opacity: 0; }
+  11% { opacity: 1; }
+  12% { opacity: 0; }
+
+  // flicker
+  79% { opacity: .2; }
+  85% { opacity: 0;}
+  90% { opacity: .8;}
+  95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@keyframes bounce {
+  25% {transform:translateY(25%); }
+  50% {transform:translateY(0%); }
+  75% {transform:translateY(25%); }
+
 }

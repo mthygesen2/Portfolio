@@ -3,14 +3,40 @@
   padding: 15px;
   width: 100%;
   display: flex;
-  flex: row wrap;
-  p{
+  flex-flow: row wrap;
+  justify-content: center;
+  p, h3 {
     font-size: 1.25em;
+    line-height: 1.2;
+    padding: 10px;
+  }
+  ul {
     line-height: 1.2;
   }
   img {
+    align-self: center;
     width: 50%;
     height: 50%;
+    border-radius: 50%;
+    border: 6px solid $dark-grey;
+  }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $dark-grey;
+  a {
+    padding: 10px 10px 0 10px;
+  }
+  #resume {
+    align-self: center;
+    font-size: 2em;
+    font-family: $font-stack;
+    transition: all 0.5s ease-in-out;
+  }
+  #resume:hover {
+    color: $bright-blue;
   }
 }
 
@@ -40,8 +66,12 @@
   justify-content: center;
   align-items: center;
   #email {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 20px 0;
+    transition: all 0.5s ease-in-out;
+  }
+  #email:hover {
+    color: $bright-blue;
   }
   .icons {
     a img {

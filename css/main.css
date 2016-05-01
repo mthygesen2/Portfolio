@@ -105,6 +105,32 @@ table {
     opacity: 1; }
   100% {
     opacity: 1; } }
+@keyframes blink2 {
+  0% {
+    opacity: 0; }
+  5% {
+    opacity: 0; }
+  11% {
+    opacity: 1; }
+  12% {
+    opacity: 0; }
+  79% {
+    opacity: .2; }
+  85% {
+    opacity: 0; }
+  90% {
+    opacity: .8; }
+  95% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes bounce {
+  25% {
+    transform: translateY(25%); }
+  50% {
+    transform: translateY(0%); }
+  75% {
+    transform: translateY(25%); } }
 @font-face {
   font-family: 'DIN Pro Condensed Regular';
   font-style: normal;
@@ -124,9 +150,6 @@ table {
   * a {
     text-decoration: none;
     color: black; }
-
-.container {
-  border: 1px solid blue; }
 
 nav {
   display: flex;
@@ -160,18 +183,42 @@ header {
   @media screen and (min-width: 500px) {
     header {
       width: 500px; } }
-  header #hello {
-    padding-left: 15px;
-    font-size: 5rem;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #EEB7DB;
-    font-family: 'Neon Lights', sans-serif;
-    text-shadow: 1px 1px 2px #DC00A0, 0 0 0.2em #ff10be, 0 0 1em #ff43cc, 0px -15px 20px #ff43cc;
-    animation: blink linear 5s; }
-    @media screen and (min-width: 800px) {
-      header #hello {
-        font-size: 8em; } }
+  header .neonSign {
+    position: relative;
+    display: flex; }
+    header .neonSign #hello {
+      padding-left: 15px;
+      font-size: 5rem;
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #EEB7DB;
+      font-family: 'Neon Lights', sans-serif;
+      text-shadow: 1px 1px 2px #DC00A0, 0 0 0.2em #ff10be, 0 0 1em #ff43cc, 0px -15px 20px #ff43cc;
+      animation: blink linear 5s; }
+      @media screen and (min-width: 800px) {
+        header .neonSign #hello {
+          font-size: 8em; } }
+    header .neonSign #h {
+      padding-left: 15px;
+      font-size: 5rem;
+      color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #EEB7DB;
+      font-family: 'Neon Lights', sans-serif;
+      text-shadow: 1px 1px 2px #DC00A0, 0 0 0.2em #ff10be, 0 0 1em #ff43cc, 0px -15px 20px #ff43cc;
+      animation: blink2 linear 5s; }
+      @media screen and (min-width: 800px) {
+        header .neonSign #h {
+          font-size: 8em; } }
+    header .neonSign #backgroundText {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-left: 15px;
+      font-size: 5rem;
+      font-family: "Neon Lights", sans-serif;
+      opacity: 0.25;
+      color: #e9e9e9; }
   header p {
     text-align: right;
     padding: 0 20px;
@@ -179,6 +226,13 @@ header {
   header a {
     align-self: center;
     margin-top: 40%; }
+    header a img {
+      animation-play-state: paused; }
+    header a img:hover {
+      -webkit-animation: bounce 2.5s;
+      animation: bounce 2.5s ease-in-out;
+      animation-iteration-count: 2;
+      animation-play-state: playing; }
 
 .heading {
   display: flex;
@@ -196,13 +250,34 @@ header {
   padding: 15px;
   width: 100%;
   display: flex;
-  flex: row wrap; }
-  .about-content p {
+  flex-flow: row wrap;
+  justify-content: center; }
+  .about-content p, .about-content h3 {
     font-size: 1.25em;
+    line-height: 1.2;
+    padding: 10px; }
+  .about-content ul {
     line-height: 1.2; }
   .about-content img {
+    align-self: center;
     width: 50%;
-    height: 50%; }
+    height: 50%;
+    border-radius: 50%;
+    border: 6px solid #232C33; }
+
+.icons {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #232C33; }
+  .icons a {
+    padding: 10px 10px 0 10px; }
+  .icons #resume {
+    align-self: center;
+    font-size: 2em;
+    font-family: "DIN Pro Condensed Regular", monospace;
+    transition: all 0.5s ease-in-out; }
+  .icons #resume:hover {
+    color: #1944D8; }
 
 .skills {
   text-align: center;
@@ -226,8 +301,11 @@ header {
   justify-content: center;
   align-items: center; }
   .contact-content #email {
-    font-size: 2em;
-    margin: 20px 0; }
+    font-size: 1.5em;
+    margin: 20px 0;
+    transition: all 0.5s ease-in-out; }
+  .contact-content #email:hover {
+    color: #1944D8; }
   .contact-content .icons a img {
     margin: 10px 20px;
     width: 50px; }
