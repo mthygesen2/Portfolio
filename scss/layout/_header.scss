@@ -1,29 +1,4 @@
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px auto 0 auto;
-  width: 80%;
-  height: 100px;
-  max-width: 800px;
-  img {
-    display: none;
-    width: 100px;
-    @media screen and (min-width: 414px) {
-      display: block;
-    }
-  }
-  a, span {
-    font-family: $font-stack;
-    margin-left: 20px;
-    font-size: 1.5em;
-    @media screen and (min-width: 800px) {
-      font-size: 2em;
-    }
-  }
-}
-
 header {
   width: 70%;
   height: 100vh;
@@ -67,14 +42,16 @@ header {
         font-size: 8em;
       }
     }
-
   }
-
-  p {
+  .intro {
     text-align: right;
     padding: 0 20px;
     font-size: 1.8em;
     @extend %text;
+    min-width: 300px;
+    @media screen and (min-width: 414px) {
+      font-size: 2em;
+    }
   }
   a {
     align-self: center;

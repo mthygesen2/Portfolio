@@ -10,6 +10,18 @@
    font-family: 'Neon Lights';
    src: url('../fonts/NEON LIGHTS.tff') format('tff');
  }
+
+
+  @font-face {
+    font-family: 'Colab Light';
+    src: url('../fonts/Colablig.off') format('off');
+  }
+
+   @font-face {
+     font-family: 'Colab Thin';
+     src: url('../fonts/Colabthi.off') format('off');
+   }
+
 @font-face {
   font-family: "Hiragino Sans GB W3";
   src: url("3b2646a48566403a55f62ceddbecbe18.eot"); /* IE9*/
@@ -28,4 +40,11 @@
 .container {
   @extend %text;
   min-width: 320px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-content {
+  flex: 1;
 }

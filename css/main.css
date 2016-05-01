@@ -45,9 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.container, header p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100; }
+.container, header .intro {
+  font-family: "Colab Light", sans-serif;
+  font-weight: 200; }
 
 .heading h2 {
   align-self: center;
@@ -121,6 +121,12 @@ header .neonSign #hello, header .neonSign #h {
   font-family: 'Neon Lights';
   src: url("../fonts/NEON LIGHTS.tff") format("tff"); }
 @font-face {
+  font-family: 'Colab Light';
+  src: url("../fonts/Colablig.off") format("off"); }
+@font-face {
+  font-family: 'Colab Thin';
+  src: url("../fonts/Colabthi.off") format("off"); }
+@font-face {
   font-family: "Hiragino Sans GB W3";
   src: url("3b2646a48566403a55f62ceddbecbe18.eot");
   /* IE9*/
@@ -133,14 +139,22 @@ header .neonSign #hello, header .neonSign #h {
     color: black; }
 
 .container {
-  min-width: 320px; }
+  min-width: 320px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.page-content {
+  flex: 1; }
 
 nav {
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px auto 0 auto;
-  width: 80%;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
   height: 100px;
   max-width: 800px; }
   nav img {
@@ -194,10 +208,14 @@ header {
       @media screen and (min-width: 800px) {
         header .neonSign #backgroundText {
           font-size: 8em; } }
-  header p {
+  header .intro {
     text-align: right;
     padding: 0 20px;
-    font-size: 1.8em; }
+    font-size: 1.8em;
+    min-width: 300px; }
+    @media screen and (min-width: 414px) {
+      header .intro {
+        font-size: 2em; } }
   header a {
     align-self: center;
     margin-top: 40%; }
