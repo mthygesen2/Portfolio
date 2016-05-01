@@ -248,6 +248,7 @@ header {
 .icons {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
   border-top: 1px solid #232C33; }
   .icons a {
     padding: 10px 10px 0 10px; }
