@@ -63,11 +63,12 @@ table {
 header .neonSign #hello, header .neonSign #h {
   padding-left: 15px;
   font-size: 5rem;
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #EEB7DB;
-  font-family: 'Neon Lights', sans-serif;
-  text-shadow: 1px 1px 2px #DC00A0, 0 0 0.2em #ff10be, 0 0 1em #ff43cc, 0px -15px 20px #ff43cc; }
+  color: #ff5dd3;
+  opacity: 0.7;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e9e9e9;
+  font-family: "Neon Lights", sans-serif;
+  text-shadow: 0px 0px 35px #DC00A0, 10px 0 20px #DC00A0, 0px -8px 20px #DC00A0, 0px -8px 20px #DC00A0; }
 
 @keyframes blink {
   0% {
@@ -119,7 +120,7 @@ header .neonSign #hello, header .neonSign #h {
   src: local("DIN Pro Condensed Regular"), url("../fonts/DINPro-Cond.woff") format("woff"); }
 @font-face {
   font-family: 'Neon Lights';
-  src: url("../fonts/NEON LIGHTS.tff") format("tff"); }
+  src: url("../fonts/neon-lights.regular.tff") format("tff"); }
 @font-face {
   font-family: 'Colab Light';
   src: url("../fonts/Colablig.off") format("off"); }
@@ -187,7 +188,8 @@ header {
     header .neonSign audio {
       display: none; }
     header .neonSign #hello {
-      animation: blink linear 4s; }
+      animation: blink linear 4s;
+      padding: 0; }
       @media screen and (min-width: 800px) {
         header .neonSign #hello {
           font-size: 8em; } }
@@ -221,7 +223,7 @@ header {
     margin-top: 40%; }
     header a img {
       animation-play-state: paused; }
-    header a img:hover {
+    header a img {
       -webkit-animation: bounce 2.5s;
       animation: bounce 2.5s ease-in-out;
       animation-iteration-count: 2;
@@ -252,7 +254,8 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  max-width: 590px; }
+  max-width: 590px;
+  margin: 0 auto; }
   .work-content a img {
     padding: 20px; }
     @media screen and (min-width: 760px) {

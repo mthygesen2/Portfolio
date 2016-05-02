@@ -16,8 +16,9 @@ header {
       display: none;
     }
     #hello {
-    @extend %hello;
+      @extend %hello;
       animation: blink linear 4s;
+      padding: 0;
       @media screen and (min-width: 800px) {
         font-size: 8em;
       }
@@ -59,7 +60,7 @@ header {
     img {
       animation-play-state: paused;
     }
-    img:hover {
+    img {
     -webkit-animation: bounce 2.5s;
     animation: bounce 2.5s ease-in-out;
     animation-iteration-count: 2;
