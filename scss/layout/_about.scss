@@ -1,8 +1,12 @@
 #about {
+
+}
+#about-heading {
   @media screen and (min-width: 760px) {
     display: inline;
     height: 80px;
     font-size: 3.5em;
+    width: 100%;
   }
 }
 .about-content {
@@ -40,19 +44,8 @@
     padding: 5px;
   }
 }
-.icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  border-top: 1px solid $dark-grey;
-  @media  screen and (min-width: 760px) {
-    padding-bottom: 20px;
-    border-bottom: 1px solid $dark-grey;
-  }
-  a {
-    padding: 10px 10px 0 10px;
-
-  }
+.resume {
+  text-align: center;
   #resume {
     align-self: center;
     font-size: 2em;
@@ -63,6 +56,7 @@
     color: $bright-blue;
   }
 }
+
 //
 // .skills {
 //   text-align: center;
