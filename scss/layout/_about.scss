@@ -1,12 +1,23 @@
 #about {
-
+background-color: $about-background;
+padding: 150px 0;
 }
-#about-heading {
-  @media screen and (min-width: 760px) {
-    display: inline;
-    height: 80px;
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  #about-heading {
+    font-family: $font-stack;
+    text-align: center;
     font-size: 3.5em;
-    width: 100%;
+    padding-right: 15px;
+    // @media screen and (min-width: 760px) {
+    //   display: inline;
+    //   height: 80px;
+    //   font-size: 3.5em;
+    //   width: 100%;
+    // }
   }
 }
 .about-content {
@@ -26,14 +37,14 @@
     line-height: 1.2;
     font-size: 1.2em;
   }
-  #mao {
-    align-self: center;
-    width: 50%;
-    height: 50%;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 1px solid $dark-grey;
-  }
+}
+#mao {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 1px solid $dark-grey;
 }
 .aboutImages {
   display: flex;
@@ -44,8 +55,10 @@
     padding: 5px;
   }
 }
-.resume {
+.about-resume {
   text-align: center;
+  margin: 0;
+  padding: 20px 0;
   #resume {
     align-self: center;
     font-size: 2em;

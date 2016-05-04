@@ -64,11 +64,10 @@ header .neonSign #hello, header .neonSign #h {
   padding-left: 15px;
   font-size: 5rem;
   color: #a9007b;
-  opacity: 0.7;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ff5dd3;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ff76da;
   font-family: "Neon Lights", sans-serif;
-  text-shadow: 0px 0px 35px #DC00A0, 10px 0 20px #DC00A0, 0px -8px 20px #DC00A0, 0px -8px 20px #DC00A0; }
+  text-shadow: 0px 0px 25px #DC00A0, 20px 0 50px #DC00A0, -20px 0 50px #DC00A0, 0px -18px 30px #DC00A0, 0px 18px 30px #DC00A0; }
 
 @keyframes blink {
   0% {
@@ -241,7 +240,7 @@ header {
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin: 25px auto;
+  margin: 0 auto;
   max-width: 1000px; }
   @media screen and (min-width: 760px) {
     .heading h2 {
@@ -252,7 +251,7 @@ header {
     display: flex;
     flex-flow: row nowrap;
     max-width: 1000px;
-    margin: 20px auto; } }
+    margin: 0 auto; } }
 
 .work-content {
   width: 100%;
@@ -289,12 +288,20 @@ header {
     height: 100px;
     z-index: 999; } }
 
-@media screen and (min-width: 760px) {
-  #about-heading {
-    display: inline;
-    height: 80px;
+#about {
+  background-color: #ebeffb;
+  padding: 150px 0; }
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .top #about-heading {
+    font-family: "DIN Pro Condensed Regular", monospace;
+    text-align: center;
     font-size: 3.5em;
-    width: 100%; } }
+    padding-right: 15px; }
 
 .about-content {
   padding: 15px;
@@ -311,13 +318,14 @@ header {
   .about-content ul {
     line-height: 1.2;
     font-size: 1.2em; }
-  .about-content #mao {
-    align-self: center;
-    width: 50%;
-    height: 50%;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 1px solid #232C33; }
+
+#mao {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 1px solid #232C33; }
 
 .aboutImages {
   display: flex;
@@ -327,14 +335,16 @@ header {
     height: 30%;
     padding: 5px; }
 
-.resume {
-  text-align: center; }
-  .resume #resume {
+.about-resume {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0; }
+  .about-resume #resume {
     align-self: center;
     font-size: 2em;
     font-family: "DIN Pro Condensed Regular", monospace;
     transition: all 0.5s ease-in-out; }
-  .resume #resume:hover {
+  .about-resume #resume:hover {
     color: #1944D8; }
 
 .contact-content {
