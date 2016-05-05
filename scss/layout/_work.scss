@@ -5,8 +5,8 @@
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin: 25px auto;
-  max-width: 800px;
+  margin: 0 auto;
+  max-width: 1000px;
   h2 {
     @extend %heading;
     @media screen and (min-width: 760px) {
@@ -20,8 +20,8 @@
   @media  screen and (min-width: 760px) {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 .work-content {
@@ -31,6 +31,7 @@
   justify-content: space-around;
   align-items: center;
   max-width: 590px;
+  margin: 0 auto;
   a img {
     padding: 20px;
     @media screen and (min-width: 760px) {

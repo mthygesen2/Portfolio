@@ -1,12 +1,28 @@
 #about {
-  @media screen and (min-width: 760px) {
-    display: inline;
-    height: 80px;
+background-color: $about-background;
+padding: 150px 0;
+max-width: 1000px;
+margin: 0 auto;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  #about-heading {
+    font-family: $font-stack;
+    text-align: center;
     font-size: 3.5em;
+    padding-right: 15px;
+    // @media screen and (min-width: 760px) {
+    //   display: inline;
+    //   height: 80px;
+    //   font-size: 3.5em;
+    //   width: 100%;
+    // }
   }
 }
 .about-content {
-
   padding: 15px;
   width: 100%;
   display: flex;
@@ -23,14 +39,14 @@
     line-height: 1.2;
     font-size: 1.2em;
   }
-  #mao {
-    align-self: center;
-    width: 50%;
-    height: 50%;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 1px solid $dark-grey;
-  }
+}
+#mao {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 1px solid $dark-grey;
 }
 .aboutImages {
   display: flex;
@@ -41,19 +57,10 @@
     padding: 5px;
   }
 }
-.icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  border-top: 1px solid $dark-grey;
-  @media  screen and (min-width: 760px) {
-    padding-bottom: 20px;
-    border-bottom: 1px solid $dark-grey;
-  }
-  a {
-    padding: 10px 10px 0 10px;
-
-  }
+.about-resume {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
   #resume {
     align-self: center;
     font-size: 2em;
@@ -64,6 +71,7 @@
     color: $bright-blue;
   }
 }
+
 //
 // .skills {
 //   text-align: center;

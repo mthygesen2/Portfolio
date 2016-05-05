@@ -1,31 +1,6 @@
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px auto 0 auto;
-  width: 80%;
-  height: 100px;
-  max-width: 800px;
-  img {
-    display: none;
-    width: 100px;
-    @media screen and (min-width: 414px) {
-      display: block;
-    }
-  }
-  a, span {
-    font-family: $font-stack;
-    margin-left: 20px;
-    font-size: 1.5em;
-    @media screen and (min-width: 800px) {
-      font-size: 2em;
-    }
-  }
-}
-
 header {
-  width: 70%;
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -41,8 +16,9 @@ header {
       display: none;
     }
     #hello {
-    @extend %hello;
+      @extend %hello;
       animation: blink linear 4s;
+      padding: 0;
       @media screen and (min-width: 800px) {
         font-size: 8em;
       }
@@ -67,26 +43,19 @@ header {
         font-size: 8em;
       }
     }
-
   }
-
-  p {
+  .intro {
     text-align: right;
-    padding: 0 20px;
+    padding-right: 0.5em;
     font-size: 1.8em;
     @extend %text;
+    min-width: 300px;
+    @media screen and (min-width: 414px) {
+      font-size: 2em;
+    }
   }
   a {
     align-self: center;
     margin-top: 40%;
-    img {
-      animation-play-state: paused;
-    }
-    img:hover {
-    -webkit-animation: bounce 2.5s;
-    animation: bounce 2.5s ease-in-out;
-    animation-iteration-count: 2;
-    animation-play-state: playing;
-    }
   }
 }

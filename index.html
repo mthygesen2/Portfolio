@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mao Thygesen</title>
       <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
@@ -17,6 +18,7 @@
         <span>//</span>
         <a href="#contact">contact</a>
       </nav>
+      <div class="page-content">
       <header>
         <div class="neonSign">
           <h1 id="h">H<h1>
@@ -32,7 +34,7 @@
         <p class="intro">
           front end developer
         </p>
-        <a href="#work"><img src="img/triangle.png" alt="Down Arrow" /></a>
+        <a href="#work"><img id="triangle" src="img/Triangle3.png" alt="Down Arrow" /></a>
       </header>
 
       <div id="work"class="heading">
@@ -41,8 +43,8 @@
           <img id="work-image" src="img/work.png" alt="work" />
         </div>
         <div class="work-content">
-          <a href="#"><img src="img/Coming Soon .png" alt="" /></a>
-          <a href="#"><img src="img/Coming Soon .png" alt="" /></a>
+          <a href="https://github.com/mthygesen2/JS-Taproom"><img src="img/Taproom.png" alt="" /></a>
+          <a href="http://mthygesen2.github.io/hello-wild/"><img src="img/hello-wild.png" alt="" /></a>
           <a href="#"><img src="img/Coming Soon .png" alt="" /></a>
           <a href="#"><img src="img/Coming Soon .png" alt="" /></a>
           <a href="#"><img src="img/Coming Soon .png" alt="" /></a>
@@ -50,15 +52,19 @@
         </div>
       </div>
 
-      <div class="heading">
+      <!-- <div id="about"class="heading"> -->
+      <div id="about">
         <a name="about"></a>
-        <h2 id="about">about</h2>
-        <div class="about-content">
+        <div class="top">
+          <h2 id="about-heading">about</h2>
           <img id="mao" src="img/mao1.jpg" alt="Mao" />
+        </div>
+        <div class="about-content">
           <p>
              I am a teacher. I am a web developer. But I am always a student. I love constantly learning new things.
           </p>
-          <h3>When I am not behind the screen I __________.</h3>
+
+          <h3>When I am not behind the screen I...</h3>
           <ul>
             <li> + Travel every chance I get.</li>
             <li> + Explore the other 71% of the Earth.</li>
@@ -70,13 +76,12 @@
         <div class="aboutImages">
           <img src="img/iceland.png" alt="iceland" />
           <img id="jump"src="img/jump.gif" alt="bungee jumping" />
-          <img src="img/scuba.png" alt="scuba diving" />
+          <img src="img/cairns2.png" alt="scuba diving" />
         </div>
-        <div class="icons">
-          <a href="resume.html" id="resume">resume</a>
-          <a href="https://github.com/mthygesen2"><img src="img/git1.png" alt="GitHub" /></a>
-          <a href="https://www.linkedin.com/in/maothygesen"><img src="img/in.png" alt="LinkedIn" /></a>
-        </div>
+        <p class="about-resume">
+          Check out my <a href="resume.html" id="resume">resume</a>.
+        </p>
+
         <!-- <div class="skills">
           <h3 id="skills">skills</h3>
           <ul>
@@ -100,13 +105,18 @@
           <img id="contact-image" src="img/Contact.png" alt="contact section" />
         </div>
         <div class="contact-content">
+          <div class="icons">
+            <a href="https://github.com/mthygesen2"><img src="img/git1.png" alt="GitHub" /></a>
+            <a href="https://www.linkedin.com/in/maothygesen"><img src="img/in.png" alt="LinkedIn" /></a>
+          </div>
           <p>
-            Drop me a line! Say Hello!
+            Drop me a line!
           </p>
           <a href="mailto:maothygesen@gmail.com" id="email">maothygesen@gmail.com</a>
 
         </div>
       </div>
     </div>
+        </div>
   </body>
 </html>

@@ -45,9 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.container, header p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100; }
+.container, header .intro {
+  font-family: "Colab Light", sans-serif;
+  font-weight: 200; }
 
 .heading h2 {
   align-self: center;
@@ -63,11 +63,11 @@ table {
 header .neonSign #hello, header .neonSign #h {
   padding-left: 15px;
   font-size: 5rem;
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #EEB7DB;
-  font-family: 'Neon Lights', sans-serif;
-  text-shadow: 1px 1px 2px #DC00A0, 0 0 0.2em #ff10be, 0 0 1em #ff43cc, 0px -15px 20px #ff43cc; }
+  color: #a9007b;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ff76da;
+  font-family: "Neon Lights", sans-serif;
+  text-shadow: 0px 0px 25px #DC00A0, 20px 0 50px #DC00A0, -20px 0 50px #DC00A0, 0px -18px 30px #DC00A0, 0px 18px 30px #DC00A0; }
 
 @keyframes blink {
   0% {
@@ -119,7 +119,13 @@ header .neonSign #hello, header .neonSign #h {
   src: local("DIN Pro Condensed Regular"), url("../fonts/DINPro-Cond.woff") format("woff"); }
 @font-face {
   font-family: 'Neon Lights';
-  src: url("../fonts/NEON LIGHTS.tff") format("tff"); }
+  src: url("../fonts/neon-lights.regular.tff") format("tff"); }
+@font-face {
+  font-family: 'Colab Light';
+  src: url("../fonts/Colablig.off") format("off"); }
+@font-face {
+  font-family: 'Colab Thin';
+  src: url("../fonts/Colabthi.off") format("off"); }
 @font-face {
   font-family: "Hiragino Sans GB W3";
   src: url("3b2646a48566403a55f62ceddbecbe18.eot");
@@ -133,14 +139,36 @@ header .neonSign #hello, header .neonSign #h {
     color: black; }
 
 .container {
-  min-width: 320px; }
+  min-width: 320px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.page-content {
+  flex: 1; }
+
+#triangle {
+  width: 50px;
+  height: auto;
+  -webkit-animation: bounce 2.5s;
+  animation: bounce 2.5s ease-in-out;
+  animation-iteration-count: 2;
+  -webkit-animation-delay: 4s;
+  /* Safari */
+  animation-delay: 4s; }
+
+#triangle:hover {
+  -webkit-animation: bounce 2.5s;
+  animation: bounce 2.5s ease-in-out; }
 
 nav {
+  background: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 20px auto 0 auto;
-  width: 80%;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
   height: 100px;
   max-width: 800px; }
   nav img {
@@ -151,14 +179,13 @@ nav {
         display: block; } }
   nav a, nav span {
     font-family: "DIN Pro Condensed Regular", monospace;
-    margin-left: 20px;
     font-size: 1.5em; }
     @media screen and (min-width: 800px) {
       nav a, nav span {
         font-size: 2em; } }
 
 header {
-  width: 70%;
+  width: 100%;
   height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -173,7 +200,8 @@ header {
     header .neonSign audio {
       display: none; }
     header .neonSign #hello {
-      animation: blink linear 4s; }
+      animation: blink linear 4s;
+      padding: 0; }
       @media screen and (min-width: 800px) {
         header .neonSign #hello {
           font-size: 8em; } }
@@ -194,20 +222,17 @@ header {
       @media screen and (min-width: 800px) {
         header .neonSign #backgroundText {
           font-size: 8em; } }
-  header p {
+  header .intro {
     text-align: right;
-    padding: 0 20px;
-    font-size: 1.8em; }
+    padding-right: 0.5em;
+    font-size: 1.8em;
+    min-width: 300px; }
+    @media screen and (min-width: 414px) {
+      header .intro {
+        font-size: 2em; } }
   header a {
     align-self: center;
     margin-top: 40%; }
-    header a img {
-      animation-play-state: paused; }
-    header a img:hover {
-      -webkit-animation: bounce 2.5s;
-      animation: bounce 2.5s ease-in-out;
-      animation-iteration-count: 2;
-      animation-play-state: playing; }
 
 .heading {
   display: flex;
@@ -215,8 +240,8 @@ header {
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin: 25px auto;
-  max-width: 800px; }
+  margin: 0 auto;
+  max-width: 1000px; }
   @media screen and (min-width: 760px) {
     .heading h2 {
       display: none; } }
@@ -225,8 +250,8 @@ header {
   #work, #contact {
     display: flex;
     flex-flow: row nowrap;
-    max-width: 800px;
-    margin: 20px auto; } }
+    max-width: 1000px;
+    margin: 0 auto; } }
 
 .work-content {
   width: 100%;
@@ -234,7 +259,8 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  max-width: 590px; }
+  max-width: 590px;
+  margin: 0 auto; }
   .work-content a img {
     padding: 20px; }
     @media screen and (min-width: 760px) {
@@ -262,11 +288,22 @@ header {
     height: 100px;
     z-index: 999; } }
 
-@media screen and (min-width: 760px) {
-  #about {
-    display: inline;
-    height: 80px;
-    font-size: 3.5em; } }
+#about {
+  background-color: #ebeffb;
+  padding: 150px 0;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .top #about-heading {
+    font-family: "DIN Pro Condensed Regular", monospace;
+    text-align: center;
+    font-size: 3.5em;
+    padding-right: 15px; }
 
 .about-content {
   padding: 15px;
@@ -283,13 +320,14 @@ header {
   .about-content ul {
     line-height: 1.2;
     font-size: 1.2em; }
-  .about-content #mao {
-    align-self: center;
-    width: 50%;
-    height: 50%;
-    max-width: 200px;
-    border-radius: 50%;
-    border: 1px solid #232C33; }
+
+#mao {
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 1px solid #232C33; }
 
 .aboutImages {
   display: flex;
@@ -299,32 +337,34 @@ header {
     height: 30%;
     padding: 5px; }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  border-top: 1px solid #232C33; }
-  @media screen and (min-width: 760px) {
-    .icons {
-      padding-bottom: 20px;
-      border-bottom: 1px solid #232C33; } }
-  .icons a {
-    padding: 10px 10px 0 10px; }
-  .icons #resume {
+.about-resume {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0; }
+  .about-resume #resume {
     align-self: center;
     font-size: 2em;
     font-family: "DIN Pro Condensed Regular", monospace;
     transition: all 0.5s ease-in-out; }
-  .icons #resume:hover {
+  .about-resume #resume:hover {
     color: #1944D8; }
 
 .contact-content {
   width: 100%;
-  margin: 10% 0;
+  margin: 5% 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center; }
+  .contact-content .icons {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #232C33; }
+    @media screen and (min-width: 760px) {
+      .contact-content .icons {
+        padding-bottom: 20px; } }
+    .contact-content .icons a {
+      padding: 10px 10px 0 10px; }
   .contact-content p {
     padding: 20px 10px;
     font-size: 1.2em;
