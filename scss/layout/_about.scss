@@ -57,9 +57,11 @@ padding: 150px 0;
 }
 .about-resume {
   text-align: center;
-  margin: 0;
+  margin-top: 25px;
   padding: 20px 0;
   #resume {
+    @extend %button;
+
     align-self: center;
     font-size: 2em;
     font-family: $font-stack;

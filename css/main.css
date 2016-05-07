@@ -49,6 +49,12 @@ table {
   font-family: "Colab Light", sans-serif;
   font-weight: 200; }
 
+.about-resume #resume, .contact-content #email {
+  border: 2px solid #112739;
+  background-color: #ebeffb;
+  padding: 5px;
+  border-radius: 3px; }
+
 .heading h2 {
   align-self: center;
   width: 100%;
@@ -337,7 +343,7 @@ header {
 
 .about-resume {
   text-align: center;
-  margin: 0;
+  margin-top: 25px;
   padding: 20px 0; }
   .about-resume #resume {
     align-self: center;

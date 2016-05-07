@@ -29,6 +29,14 @@ $about-background: #ebeffb;
   font-weight: 200;
 }
 
+%button {
+  border: 2px solid $dark-blue;
+  background-color: $about-background;
+  padding: 5px;
+  border-radius: 3px;
+
+}
+
 %heading {
   align-self: center;
   width: 100%;
