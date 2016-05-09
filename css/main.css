@@ -121,11 +121,10 @@ header .neonSign #hello, header .neonSign #h {
 @font-face {
   font-family: 'DIN Pro Condensed Regular';
   font-style: normal;
-  font-weight: normal;
   src: local("DIN Pro Condensed Regular"), url("../fonts/DINPro-Cond.woff") format("woff"); }
 @font-face {
   font-family: 'Neon Lights';
-  src: url("../fonts/neon-lights-regular.tff") format("tff"); }
+  src: url("../fonts/neonlights-webfont.woff") format("woff"); }
 @font-face {
   font-family: 'Colab Light';
   src: url("../fonts/Colablig.off") format("off"); }
