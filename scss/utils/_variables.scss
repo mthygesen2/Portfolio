@@ -58,3 +58,7 @@ $about-background: #ebeffb;
    font-family: $hello-font;
    text-shadow: 0px 0px 25px $shadow-color, 20px 0 50px $shadow-color, -20px 0 50px $shadow-color, 0px -18px 70px $shadow-color, 0px 18px 70px $shadow-color;
  }
+
+%hover {
+  text-decoration: underline solid $shadow-color;
+}
