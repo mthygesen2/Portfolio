@@ -2,16 +2,20 @@
 header {
   width: 100%;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  @media  screen and (min-width: 500px) {
-    width: 500px;
-  }
+  align-content: center;
+  background-color: $dark-grey;
+
   .neonSign {
     position: relative;
     display: flex;
+    margin: 0 auto;
+    @media  screen and (min-width: 500px) {
+      width: 500px;
+    }
     audio {
       display: none;
     }
@@ -48,14 +52,18 @@ header {
     text-align: right;
     padding-right: 0.5em;
     font-size: 1.8em;
+    margin: 0 auto;
     @extend %text;
     min-width: 300px;
+    @media  screen and (min-width: 500px) {
+      width: 500px;
+    }
     @media screen and (min-width: 414px) {
       font-size: 2em;
     }
   }
   a {
-    align-self: center;
-    margin-top: 40%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }
