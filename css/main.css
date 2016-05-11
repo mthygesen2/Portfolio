@@ -405,4 +405,41 @@ header {
   max-width: 800px;
   margin: 20px auto; }
 
+.noble-study {
+  display: flex;
+  flex-flow: column; }
+  .noble-study .case-header {
+    width: 100%;
+    height: 500px;
+    background: url("../img/noble/CaseHeader.png") center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center; }
+    .noble-study .case-header span {
+      background: white;
+      width: 300px;
+      height: auto;
+      font-family: "DIN Pro Condensed Regular", monospace;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em; }
+    .noble-study .case-header #noble-title {
+      font-size: 3em; }
+  .noble-study .noble {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    line-height: 1.5; }
+    .noble-study .noble h1 {
+      font-family: "DIN Pro Condensed Regular", monospace;
+      font-size: 2em; }
+  .noble-study .case-intro {
+    width: 100%;
+    font-size: 1.2em;
+    background: #ebeffb;
+    padding: 35px; }
+
 /*# sourceMappingURL=main.css.map */
