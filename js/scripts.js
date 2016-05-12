@@ -4,4 +4,18 @@ $(document).ready(function() {
 		menu: '#menu',
 		scrollingSpeed: 1000
   });
+  // $('.container').scroll(function() {
+  //   var top = $(this).scrollTop();
+  //   if (top > 100)
+  //     $('#menu').addClass('color-change');
+  // });
+  // $(window).resize(function() {
+  //   if ($(window).width() < 514) {
+  //     $('.work-content').removeClass('slide');
+  //   }
+  //   //  else {
+  //   //   $('.work-content').addClass('slide');
+  //   // }
+  // })
+  // .resize();
 });

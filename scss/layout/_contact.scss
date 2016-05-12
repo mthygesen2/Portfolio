@@ -1,15 +1,19 @@
-
+#section3 {
+  background: url("../img/pattern.png") bottom;
+  background-size: cover;
+}
 .contact-content {
   width: 100%;
-  margin: 5% 0;
+  height: 90vh;
+  padding-top: 25%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   .icons {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid $dark-grey;
+    // border-bottom: 1px solid $dark-grey;
     @media  screen and (min-width: 760px) {
       padding-bottom: 20px;
       // border-bottom: 1px solid $dark-grey;

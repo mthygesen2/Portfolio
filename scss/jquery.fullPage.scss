@@ -81,13 +81,13 @@ html.fp-enabled,
     &.fp-prev {
         left: 15px;
         width: 0;
-        border-width: 38.5px 34px 38.5px 0;
+        border-width: 20px 15px 20px 0;
         border-color: transparent #fff transparent transparent;
     }
 
     &.fp-next {
         right: 15px;
-        border-width: 38.5px 0 38.5px 34px;
+        border-width: 20px 0 20px 15px;
         border-color: transparent transparent transparent #fff;
     }
 }

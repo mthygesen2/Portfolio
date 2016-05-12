@@ -50,10 +50,8 @@ table {
   font-weight: 200; }
 
 .about-resume #resume, .contact-content #email {
-  border: 2px solid #112739;
-  background-color: #ebeffb;
-  padding: 5px;
-  border-radius: 3px; }
+  border-bottom: 2px solid #112739;
+  padding: 5px; }
 
 .heading h2 {
   display: flex;
@@ -168,6 +166,12 @@ header .neonSign #hello, header .neonSign #h {
   -webkit-animation: bounce 2.5s;
   animation: bounce 2.5s ease-in-out; }
 
+.fp-viewing-firstPage .container #menu {
+  background-color: #232C33;
+  color: white; }
+  .fp-viewing-firstPage .container #menu a {
+    color: white; }
+
 #menu {
   background: white;
   display: flex;
@@ -176,8 +180,11 @@ header .neonSign #hello, header .neonSign #h {
   align-content: center;
   margin: 0 auto;
   width: 100%;
-  height: 100px;
+  height: 60px;
   z-index: 9999; }
+  @media screen and (min-width: 414px) {
+    #menu {
+      height: 100px; } }
   #menu img {
     display: none;
     width: 100px; }
@@ -262,6 +269,13 @@ header {
     .heading h2 {
       display: none; } }
 
+.work-heading {
+  background-color: #112739;
+  display: flex;
+  justify-content: flex-end; }
+  .work-heading .fp-tableCell {
+    text-align: center; }
+
 @media screen and (min-width: 760px) {
   #section1, #section3 {
     display: flex;
@@ -288,7 +302,6 @@ header {
   width: 30%;
   height: 500px;
   padding: 150px;
-  background: #112739;
   display: none;
   z-index: -1; }
   @media screen and (min-width: 759px) {
@@ -305,9 +318,12 @@ header {
     z-index: 999; } }
 
 #section2 {
-  background-color: #ebeffb;
+  background: url("../img/pattern.png");
+  background-size: cover;
   max-width: 1000px;
   margin: 0 auto; }
+  #section2 .fp-tableCell {
+    vertical-align: top; }
 
 .top {
   display: flex;
@@ -333,8 +349,10 @@ header {
     line-height: 1.2;
     padding: 10px; }
   .about-content ul {
-    line-height: 1.2;
-    font-size: 1.2em; }
+    line-height: 1.2; }
+    @media screen and (min-width: 414px) {
+      .about-content ul {
+        font-size: 1.2em; } }
 
 #mao {
   align-self: center;
@@ -345,36 +363,46 @@ header {
   border: 1px solid #232C33; }
 
 .aboutImages {
-  display: flex;
-  justify-content: center; }
+  display: none; }
+  @media screen and (min-height: 900px) {
+    .aboutImages {
+      display: flex;
+      justify-content: center; } }
   .aboutImages img {
     width: 30%;
     height: 30%;
     padding: 5px; }
 
 .about-resume {
-  text-align: center;
-  margin-top: 25px;
-  padding: 20px 0; }
+  text-align: center; }
   .about-resume #resume {
     align-self: center;
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: "DIN Pro Condensed Regular", monospace;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 2px; }
+    @media screen and (min-width: 414px) {
+      .about-resume #resume {
+        font-size: 2em;
+        padding-top: 25px; } }
   .about-resume #resume:hover {
     color: #1944D8; }
 
+#section3 {
+  background: url("../img/pattern.png") bottom;
+  background-size: cover; }
+
 .contact-content {
   width: 100%;
-  margin: 5% 0;
+  height: 90vh;
+  padding-top: 25%;
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center; }
   .contact-content .icons {
     display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #232C33; }
+    justify-content: center; }
     @media screen and (min-width: 760px) {
       .contact-content .icons {
         padding-bottom: 20px; } }
@@ -527,11 +555,11 @@ html.fp-enabled,
   .fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
+    border-width: 20px 15px 20px 0;
     border-color: transparent #fff transparent transparent; }
   .fp-controlArrow.fp-next {
     right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
+    border-width: 20px 0 20px 15px;
     border-color: transparent transparent transparent #fff; }
 
 .fp-scrollable {
