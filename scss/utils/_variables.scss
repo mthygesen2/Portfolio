@@ -38,12 +38,14 @@ $about-background: #ebeffb;
 }
 
 %heading {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background: $dark-grey;
-  height: 50px;
+  height: 100px;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   color: $mid-blue;
   padding-top: 8px;
   font-family: $font-stack;

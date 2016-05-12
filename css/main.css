@@ -56,12 +56,14 @@ table {
   border-radius: 3px; }
 
 .heading h2 {
-  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background: #232C33;
-  height: 50px;
+  height: 100px;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   color: #6683E1;
   padding-top: 8px;
   font-family: "DIN Pro Condensed Regular", monospace; }
@@ -199,8 +201,7 @@ header {
   flex-flow: column;
   justify-content: center;
   align-content: center;
-  background-color: #232C33;
-  max-width: 1000px; }
+  background-color: #232C33; }
   header .neonSign {
     position: relative;
     display: flex;
@@ -256,8 +257,7 @@ header {
   justify-content: center;
   align-content: center;
   width: 100%;
-  margin: 0 auto;
-  max-width: 1000px; }
+  margin: 0 auto; }
   @media screen and (min-width: 760px) {
     .heading h2 {
       display: none; } }
@@ -306,7 +306,6 @@ header {
 
 #section2 {
   background-color: #ebeffb;
-  padding: 150px 0;
   max-width: 1000px;
   margin: 0 auto; }
 
