@@ -258,68 +258,41 @@ header {
     margin: 0 auto;
     margin-top: 20px; }
 
-.heading {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  margin: 0 auto; }
-  @media screen and (min-width: 760px) {
-    .heading h2 {
-      display: none; } }
-
 .work-heading {
   background-color: #112739;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: center;
+  height: 150px;
+  border-top: 5px solid #DC00A0; }
   .work-heading .fp-tableCell {
     text-align: center; }
 
-@media screen and (min-width: 760px) {
-  #section1, #section3 {
-    display: flex;
-    flex-flow: row nowrap;
-    max-width: 1000px;
-    margin: 0 auto; } }
-
 .work-content {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 590px;
-  margin: 0 auto; }
-  .work-content a img {
-    padding: 20px; }
+  width: 100%; }
+  .work-content a {
+    display: block;
+    font-size: 2.1em;
+    font-family: "DIN Pro Condensed Regular", monospace;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    padding: 15px; }
+    .work-content a:hover {
+      color: #DC00A0; }
+  .work-content h2 {
+    font-size: 1.2em;
+    padding: 15px; }
+  .work-content img {
+    width: auto;
+    height: 200px; }
     @media screen and (min-width: 760px) {
-      .work-content a img {
-        padding: 0;
-        align-self: center; } }
-
-.wide {
-  width: 30%;
-  height: 500px;
-  padding: 150px;
-  display: none;
-  z-index: -1; }
-  @media screen and (min-width: 759px) {
-    .wide {
-      display: flex;
-      justify-content: center;
-      align-content: center; } }
-
-@media screen and (min-width: 759px) {
-  #work-image {
-    align-self: center;
-    width: 100px;
-    height: 100px;
-    z-index: 999; } }
+      .work-content img {
+        width: 50%;
+        height: auto; } }
+  .work-content p {
+    line-height: 1.5;
+    margin-left: 15px; }
 
 #section2 {
-  background: url("../img/pattern.png");
-  background-size: cover;
   max-width: 1000px;
   margin: 0 auto; }
   #section2 .fp-tableCell {
@@ -330,6 +303,9 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px; }
+  @media screen and (min-width: 415px) {
+    .top {
+      margin-top: 150px; } }
   .top #about-heading {
     font-family: "DIN Pro Condensed Regular", monospace;
     text-align: center;
@@ -389,7 +365,7 @@ header {
     color: #1944D8; }
 
 #section3 {
-  background: url("../img/pattern.png") bottom;
+  background: url("../img/fish.png") bottom;
   background-size: cover; }
 
 .contact-content {
@@ -414,17 +390,34 @@ header {
     font-weight: bold; }
   .contact-content #email {
     font-size: 1.5em;
-    margin: 20px 0;
     transition: all 0.5s ease-in-out; }
   .contact-content #email:hover {
     color: #1944D8; }
 
-@media screen and (min-width: 759px) {
-  #contact-image {
-    align-self: center;
-    width: 200px;
-    height: auto;
-    z-index: 999; } }
+.heading {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 415px) {
+    .heading h2 {
+      font-size: 5em;
+      height: 300px; } }
+
+.wide {
+  width: 30%;
+  height: 500px;
+  padding: 150px;
+  background: #112739;
+  display: none;
+  z-index: -1; }
+  @media screen and (min-width: 759px) {
+    .wide {
+      display: flex;
+      justify-content: center;
+      align-content: center; } }
 
 .resume {
   width: 100%;
@@ -543,7 +536,7 @@ html.fp-enabled,
   /* IE10+ */
   position: absolute;
   z-index: 4;
-  top: 50%;
+  top: 85%;
   cursor: pointer;
   width: 0;
   height: 0;
@@ -556,11 +549,11 @@ html.fp-enabled,
     left: 15px;
     width: 0;
     border-width: 20px 15px 20px 0;
-    border-color: transparent #fff transparent transparent; }
+    border-color: transparent #6683E1 transparent transparent; }
   .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 20px 0 20px 15px;
-    border-color: transparent transparent transparent #fff; }
+    border-color: transparent transparent transparent #6683E1; }
 
 .fp-scrollable {
   overflow: scroll; }

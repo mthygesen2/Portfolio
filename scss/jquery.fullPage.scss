@@ -68,7 +68,7 @@ html.fp-enabled,
     -ms-user-select: none; /* IE10+ */
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 85%;
     cursor: pointer;
     width: 0;
     height: 0;
@@ -82,13 +82,13 @@ html.fp-enabled,
         left: 15px;
         width: 0;
         border-width: 20px 15px 20px 0;
-        border-color: transparent #fff transparent transparent;
+        border-color: transparent #6683E1 transparent transparent;
     }
 
     &.fp-next {
         right: 15px;
         border-width: 20px 0 20px 15px;
-        border-color: transparent transparent transparent #fff;
+        border-color: transparent transparent transparent #6683E1;
     }
 }
 .fp-scrollable {

@@ -1,6 +1,6 @@
 #section2 {
-background: url("../img/pattern.png");
-background-size: cover;
+// background: url("../img/pattern.png");
+// background-size: cover;
 max-width: 1000px;
 margin: 0 auto;
 .fp-tableCell {
@@ -12,17 +12,14 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  @media screen and (min-width: 415px) {
+    margin-top: 150px;
+  }
   #about-heading {
     font-family: $font-stack;
     text-align: center;
     font-size: 3.5em;
     padding-right: 15px;
-    // @media screen and (min-width: 760px) {
-    //   display: inline;
-    //   height: 80px;
-    //   font-size: 3.5em;
-    //   width: 100%;
-    // }
   }
 }
 .about-content {
