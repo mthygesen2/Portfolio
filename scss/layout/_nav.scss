@@ -1,5 +1,5 @@
 
-nav {
+#menu {
     // position: fixed;
   background: white;
   display: flex;
@@ -9,7 +9,8 @@ nav {
   margin: 0 auto;
   width: 100%;
   height: 100px;
-  max-width: 800px;
+  // max-width: 800px;
+  z-index: 9999;
   img {
     display: none;
     width: 100px;

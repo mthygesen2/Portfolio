@@ -13,16 +13,16 @@
       <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   </head>
   <body>
-    <div id="fullpage" class="container">
-      <nav>
+    <div class="container">
+      <ul id="menu">
         <img src="img/logo.png" alt="mt logo" />
-        <a href="#work">work</a>
+        <li data-menuanchor="secondPage"><a href="#secondPage">work</a></li>
         <span>//</span>
-        <a href="#about">about</a>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">about</a></li>
         <span>//</span>
-        <a href="#contact">contact</a>
-      </nav>
-      <div class="page-content">
+        <li data-menuanchor="4thPage"><a href="#4thPage">contact</a></li>
+      </ul>
+      <div id="fullpage"class="page-content">
       <header class="section" id="section0">
         <div class="neonSign">
           <h1 id="h">H<h1>
@@ -38,7 +38,7 @@
         <p class="intro">
           front end developer
         </p>
-        <a href="#work"><img id="triangle" src="img/Triangle3.png" alt="Down Arrow" /></a>
+        <!-- <a href="#work"><img id="triangle" src="img/Triangle3.png" alt="Down Arrow" /></a> -->
       </header>
 
       <div id="section1"class="heading section">
