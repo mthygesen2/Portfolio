@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mao Thygesen</title>
       <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
       <link rel="icon" href="img/hello.png">
+      <script src="js/jquery-1.12.3.js"></script>
+      <script src="js/scripts.js"></script>
+      <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div id="fullpage" class="container">
       <nav>
         <img src="img/logo.png" alt="mt logo" />
         <a href="#work">work</a>
@@ -19,7 +23,7 @@
         <a href="#contact">contact</a>
       </nav>
       <div class="page-content">
-      <header>
+      <header class="section" id="section0">
         <div class="neonSign">
           <h1 id="h">H<h1>
           <h1 id="hello">ELLO</h1>
@@ -37,7 +41,7 @@
         <a href="#work"><img id="triangle" src="img/Triangle3.png" alt="Down Arrow" /></a>
       </header>
 
-      <div id="work"class="heading">
+      <div id="section1"class="heading section">
         <h2>work</h2>
         <div class="wide">
           <img id="work-image" src="img/work1.png" alt="work" />
@@ -53,7 +57,7 @@
       </div>
 
       <!-- <div id="about"class="heading"> -->
-      <div id="about">
+      <div id="section2" class="section">
         <a name="about"></a>
         <div class="top">
           <h2 id="about-heading">about</h2>
@@ -99,7 +103,7 @@
         </div> -->
       </div>
 
-      <div id="contact" class="heading">
+      <div id="section3" class="section heading">
         <h2>contact</h2>
         <div class="wide">
           <img id="contact-image" src="img/Contact.png" alt="contact section" />
