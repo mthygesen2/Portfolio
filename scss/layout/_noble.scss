@@ -49,10 +49,10 @@
   position: relative;
   img {
     position: absolute;
-    top: 250px;
-    right: 0px;
+    bottom: -80px;
+    right: 10px;
     z-index: 999;
-    width: 50%;
+    width: 20%;
     max-width: 400px;
   }
 }
