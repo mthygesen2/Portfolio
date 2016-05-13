@@ -1,67 +1,76 @@
-//heading for all sections///
-.heading {
+
+.work-heading {
+  background-color: $dark-blue;
   display: flex;
-  flex-flow: column;
   justify-content: center;
-  align-content: center;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1000px;
-  h2 {
-    @extend %heading;
-    @media screen and (min-width: 760px) {
-      display: none;
-    }
+  height: 150px;
+  border-top: 5px solid $shadow-color;
+  .fp-tableCell {
+    text-align: center;
   }
 }
 
 //start of work area///
-#work, #contact {
-  @media  screen and (min-width: 760px) {
-    display: flex;
-    flex-flow: row nowrap;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-}
+// #section1, #section3 {
+//   @media  screen and (min-width: 760px) {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     max-width: 1000px;
+//     margin: 0 auto;
+//   }
+// }
+
+//centers the work image and makes the other slides have a top align
+// .fp-slidesContainer {
+//     #work-image{
+//       margin-top: 55%;
+//   }
+//   .fp-tableCell {
+//     vertical-align: top;
+//     // text-align: left;
+//   }
+// }
+
 .work-content {
   width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 590px;
-  margin: 0 auto;
-  a img {
-    padding: 20px;
+  a{
+    display: block;
+    font-size: 2.1em;
+    font-family: $font-stack;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    padding: 15px;
+    &:hover {
+      color: $shadow-color;
+    }
+  }
+  h2 {
+    font-size: 1.2em;
+    padding: 15px;
+  }
+  img {
+    width: auto;
+    height: 200px;
     @media screen and (min-width: 760px) {
-      padding: 0;
-      align-self: center;
+      width: 50%;
+      height: auto;
     }
     // &:hover {
     //   transition:
     // }
   }
-}
-.wide {
-  width: 30%;
-  height: 500px;
-  padding: 150px;
-  background: $dark-grey;
-  display: none;
-  z-index: -1;
-  @media  screen and (min-width: 759px) {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  p {
+    line-height: 1.5;
+    margin-left: 15px;
   }
 }
 
-#work-image {
-  @media  screen and (min-width: 759px) {
-    align-self: center;
-    width: 100px;
-    height: 100px;
-    z-index: 999;
-  }
-}
+
+// #work-image {
+//   @media  screen and (min-width: 759px) {
+//     align-self: center;
+//     width: 100px;
+//     height: 100px;
+//     z-index: 999;
+//   }
+// }

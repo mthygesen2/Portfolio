@@ -1,23 +1,21 @@
 
 @keyframes blink {
-0% { opacity: 0; }
-65% { opacity: 1; }
-66% { opacity: 0; }
-79% { opacity: 1; }
-80% { opacity: 0; }
-95% { opacity: 1; }
-99% { opacity: 0; }
-100% { opacity: 1; }
+  0% { opacity: 0; }
+  65% { opacity: 1; }
+  66% { opacity: 0; }
+  79% { opacity: 1; }
+  80% { opacity: 0; }
+  95% { opacity: 1; }
+  99% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes blink2 {
-0% { opacity: 0; }
-
+  0% { opacity: 0; }
   // flicker
   5%  { opacity: 0; }
   11% { opacity: 1; }
   12% { opacity: 0; }
-
   // flicker
   79% { opacity: .2; }
   85% { opacity: 0;}

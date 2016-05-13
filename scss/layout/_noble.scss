@@ -1,0 +1,43 @@
+.noble-study {
+  display: flex;
+  flex-flow: column;
+  .case-header {
+    width: 100%;
+    height: 500px;
+    background: url("../img/noble/CaseHeader.png") center;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    span {
+      background: white;
+      width: 300px;
+      height: auto;
+      font-family: $font-stack;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    #noble-title {
+      font-size: 3em;
+    }
+  }
+  .noble {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    line-height: 1.5;
+    h1 {
+      font-family: $font-stack;
+      font-size: 2em;
+    }
+  }
+  .case-intro {
+    width: 100%;
+    font-size: 1.2em;
+    background: $about-background;
+    padding: 35px;
+  }
+}
