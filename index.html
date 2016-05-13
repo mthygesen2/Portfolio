@@ -10,7 +10,7 @@
       <link rel="icon" href="img/hello.png">
       <script src="js/jquery-1.12.3.js"></script>
       <script src="js/scripts.js"></script>
-  
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>
       <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
       <script type="text/javascript" src="js/jquery.fullPage.js"></script>
   </head>
@@ -47,47 +47,47 @@
         <div class="work-heading">
             <img id="work-image" src="img/work1.png" alt="work" />
             <div class="collage">
-              <img src="img/Taproom.png" width="400" height="300"  alt="Tap Room App" />
-              <img src="img/wild.png"width="400" height="300"  alt="Hello Wild App" />
-              <img src="img/git.png" width="400" height="300" alt="Git Hub App" />
-              <img src="img/Coming Soon .png" width="300" height="300" alt="Coming Soon" />
+              <img id="taproom" src="img/Taproom.png" width="400" height="300"  alt="Tap Room App" />
+              <img id="wild" src="img/wild.png"width="400" height="300"  alt="Hello Wild App" />
+              <img id="git" src="img/git.png" width="400" height="300" alt="Git Hub App" />
+              <img id="soon" src="img/Coming Soon .png" width="300" height="300" alt="Coming Soon" />
             </div>
         </div>
-
-        <div class="work-content">
+        <div id="taproom-info"class="work-content">
           <img src="img/Taproom.png" alt="taproom app" />
           <a href="https://github.com/mthygesen2/JS-Taproom">Tap Room</a>
           <h2>JavaScript Angular2</h2>
           <p>
             An application that show cases the use of Angular2 while it was still in beta. A functional app made with limited documentation.
           </p>
+          <span id="back">back</span>
         </div>
-        <div class="work-content">
+        <div id="wild-info" class="work-content">
           <img src="img/wild.png" alt="hello wild css" />
           <a href="http://mthygesen2.github.io/hello-wild/">Hello Wild</a>
           <h2>CSS / Html</h2>
           <p>
             A replica of the site Arctic Wild. Made purely using CSS and Html. Fully responsive.
           </p>
+          <span id="back">back</span>
         </div>
-        <div class="work-content">
+        <div id="git-info" draggable=""class="work-content">
           <img src="img/git.png" alt="github api app" />
 
           <a href="https://github.com/mthygesen2/JS-Git-Api">GitHub API</a>
           <p>
             GitHub Api
           </p>
+          <span id="back">back</span>
         </div>
-        <div class="work-content">
+        <div id="soon-info" class="work-content">
           <img src="img/Coming Soon .png" alt="" />
           <a href="#">Coming soon</a>
+          <span id="back">back</span>
         </div>
-          <!-- <a href="#"><img src="img/Coming Soon .png" alt="" /></a>
-          <a href="#"><img src="img/Coming Soon .png" alt="" /></a> -->
       </div>
 
 
-      <!-- <div id="about"class="heading"> -->
       <div id="section2" class="section">
         <a name="about"></a>
         <div class="top">
@@ -116,22 +116,6 @@
         <p class="about-resume">
           Check out my <a href="resume.html" id="resume">resume</a>
         </p>
-
-        <!-- <div class="skills">
-          <h3 id="skills">skills</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-          </ul>
-            <ul class="js">
-              <li>JavaScript</li>
-              <li>Ember.js</li>
-              <li>Angular2</li>
-              <li>jQuery</li>
-
-            </ul>
-
-        </div> -->
       </div>
 
       <div id="section3" class="section heading">
