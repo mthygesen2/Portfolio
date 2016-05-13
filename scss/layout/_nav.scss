@@ -1,6 +1,5 @@
 
 nav {
-    // position: fixed;
   background: white;
   display: flex;
   justify-content: space-around;
@@ -19,10 +18,12 @@ nav {
   }
   a, span {
     font-family: $font-stack;
-    // margin-left: 20px;
     font-size: 1.5em;
     @media screen and (min-width: 800px) {
       font-size: 2em;
     }
+  }
+  a:hover {
+    color: $bright-blue;
   }
 }

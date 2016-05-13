@@ -30,11 +30,8 @@ $about-background: #ebeffb;
 }
 
 %button {
-  border: 2px solid $dark-blue;
-  background-color: $about-background;
+  border-bottom: 2px solid $mid-blue;
   padding: 5px;
-  border-radius: 3px;
-
 }
 
 %heading {
