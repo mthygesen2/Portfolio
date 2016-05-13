@@ -12,8 +12,6 @@
     vertical-align: top;
     @media screen and (min-width: 415px) {
       padding: 0px;
-    }
-    @media screen and (min-width: 990px) {
       vertical-align: middle;
     }
   }
@@ -70,6 +68,7 @@
   color: white;
   flex-flow: column;
   display: flex;
+  align-content: center;
   #back {
     font-size: 2em;
     font-family: $font-stack;
