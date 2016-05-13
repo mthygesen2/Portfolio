@@ -50,11 +50,7 @@ table {
   font-weight: 200; }
 
 .about-resume #resume, .contact-content #email {
-<<<<<<< HEAD
-  border-bottom: 2px solid #6683E1;
-=======
   border-bottom: 2px solid #112739;
->>>>>>> 9eb4cfa982517ada32f6cb9b78a789476ddb08f4
   padding: 5px; }
 
 .heading h2 {
@@ -201,13 +197,10 @@ header .neonSign #hello, header .neonSign #h {
     @media screen and (min-width: 800px) {
       #menu a, #menu span {
         font-size: 2em; } }
-<<<<<<< HEAD
-  nav a:hover {
-    color: #1944D8; }
-=======
     #menu a:hover, #menu span:hover {
       color: #DC00A0; }
->>>>>>> 9eb4cfa982517ada32f6cb9b78a789476ddb08f4
+  #menu a:hover {
+    color: #1944D8; }
 
 header {
   width: 100%;
@@ -267,14 +260,55 @@ header {
     margin: 0 auto;
     margin-top: 20px; }
 
+.work-content {
+  display: none; }
+
+#section1 {
+  background-color: #112739; }
+  #section1 .fp-tableCell {
+    padding: 25px 0;
+    border-top: 5px solid #DC00A0;
+    vertical-align: top; }
+    @media screen and (min-width: 415px) {
+      #section1 .fp-tableCell {
+        padding: 0px; } }
+
 .work-heading {
   background-color: #112739;
   display: flex;
+  flex-flow: column;
   justify-content: center;
-  height: 150px;
-  border-top: 5px solid #DC00A0; }
-  .work-heading .fp-tableCell {
-    text-align: center; }
+  height: 100%; }
+  @media screen and (min-width: 990px) {
+    .work-heading {
+      flex-flow: row; } }
+  .work-heading #work-image {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 990px) {
+      .work-heading #work-image {
+        margin: 50px;
+        width: 200px;
+        height: 200px; } }
+  .work-heading .collage {
+    background-color: #112739;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    @media screen and (min-width: 990px) {
+      .work-heading .collage {
+        align-content: center;
+        max-width: 700px; } }
+    .work-heading .collage img {
+      margin: 15px;
+      border: 2px solid white;
+      width: 300px;
+      height: 300px; }
+      @media screen and (min-width: 990px) {
+        .work-heading .collage img {
+          border: 4px solid white; } }
 
 .work-content {
   width: 100%; }
@@ -312,9 +346,6 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px; }
-  @media screen and (min-width: 415px) {
-    .top {
-      margin-top: 150px; } }
   .top #about-heading {
     font-family: "DIN Pro Condensed Regular", monospace;
     text-align: center;

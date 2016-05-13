@@ -12,9 +12,9 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  @media screen and (min-width: 415px) {
-    margin-top: 150px;
-  }
+  // @media screen and (min-width: 415px) {
+  //   margin-top: 150px;
+  // }
   #about-heading {
     font-family: $font-stack;
     text-align: center;

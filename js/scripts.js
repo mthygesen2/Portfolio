@@ -2,8 +2,10 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 		menu: '#menu',
-		scrollingSpeed: 1000
+		scrollingSpeed: 1000,
+    scrollOverflow: true
   });
+
   // $('.container').scroll(function() {
   //   var top = $(this).scrollTop();
   //   if (top > 100)
