@@ -50,11 +50,7 @@ table {
   font-weight: 200; }
 
 .about-resume #resume, .contact-content #email {
-<<<<<<< HEAD
-  border-bottom: 2px solid #6683E1;
-=======
   border-bottom: 2px solid #112739;
->>>>>>> 9eb4cfa982517ada32f6cb9b78a789476ddb08f4
   padding: 5px; }
 
 .heading h2 {
@@ -201,13 +197,10 @@ header .neonSign #hello, header .neonSign #h {
     @media screen and (min-width: 800px) {
       #menu a, #menu span {
         font-size: 2em; } }
-<<<<<<< HEAD
-  nav a:hover {
-    color: #1944D8; }
-=======
     #menu a:hover, #menu span:hover {
       color: #DC00A0; }
->>>>>>> 9eb4cfa982517ada32f6cb9b78a789476ddb08f4
+  #menu a:hover {
+    color: #1944D8; }
 
 header {
   width: 100%;
