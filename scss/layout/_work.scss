@@ -1,45 +1,85 @@
 
-.work-heading {
+
+#section1 {
   background-color: $dark-blue;
-  display: flex;
-  justify-content: center;
-  height: 150px;
-  border-top: 5px solid $shadow-color;
+  padding-bottom: 100px;
+  @media screen and (min-width: 415px) {
+    padding: 0px;
+  }
   .fp-tableCell {
-    text-align: center;
+    padding: 25px 0;
+    border-top: 5px solid $shadow-color;
+    vertical-align: top;
+    @media screen and (min-width: 415px) {
+      padding: 0px;
+      vertical-align: middle;
+    }
   }
 }
-
-//start of work area///
-// #section1, #section3 {
-//   @media  screen and (min-width: 760px) {
-//     display: flex;
-//     flex-flow: row nowrap;
-//     max-width: 1000px;
-//     margin: 0 auto;
-//   }
+.work-heading {
+  max-width: 1200px;
+  background-color: $dark-blue;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  @media screen and (min-width: 990px) {
+    flex-flow: row;
+  }
+  #work-image {
+    align-self: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+    @media screen and (min-width: 990px) {
+      margin: 50px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .collage {
+    background-color: $dark-blue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-height: 700px;
+    @media screen and (min-width: 990px) {
+      align-content: center;
+      width: 700px;
+    }
+    img {
+      margin: 15px;
+      border: 2px solid white;
+      width: 150px;
+      height: 150px;
+      @media screen and (min-width: 415px) {
+        width: 300px;
+        height: 300px;
+      }
+      @media screen and (min-width: 990px) {
+        border: 4px solid white;
+      }
+    }
+  }
+}
+// .work-content{
+//   display: none;
 // }
-
-//centers the work image and makes the other slides have a top align
-// .fp-slidesContainer {
-//     #work-image{
-//       margin-top: 55%;
-//   }
-//   .fp-tableCell {
-//     vertical-align: top;
-//     // text-align: left;
-//   }
-// }
-
 .work-content {
-  width: 100%;
+  color: white;
+  flex-flow: column;
+  display: flex;
+  align-content: center;
+  #back {
+    font-size: 2em;
+    font-family: $font-stack;
+  }
   a{
-    display: block;
     font-size: 2.1em;
     font-family: $font-stack;
     text-decoration: underline;
     letter-spacing: 2px;
     padding: 15px;
+    color: white;
     &:hover {
       color: $shadow-color;
     }
@@ -47,30 +87,23 @@
   h2 {
     font-size: 1.2em;
     padding: 15px;
+
   }
-  img {
+  img{
+    align-self: center;
     width: auto;
     height: 200px;
     @media screen and (min-width: 760px) {
       width: 50%;
       height: auto;
     }
-    // &:hover {
-    //   transition:
-    // }
+  }
+  span {
+    align-self: flex-end;
+    padding: 50px;
   }
   p {
     line-height: 1.5;
     margin-left: 15px;
   }
 }
-
-
-// #work-image {
-//   @media  screen and (min-width: 759px) {
-//     align-self: center;
-//     width: 100px;
-//     height: 100px;
-//     z-index: 999;
-//   }
-// }

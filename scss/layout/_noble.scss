@@ -1,6 +1,7 @@
 .noble-study {
   display: flex;
   flex-flow: column;
+  // width: 100%;
   .case-header {
     width: 100%;
     height: 500px;
@@ -23,12 +24,12 @@
     }
   }
   .noble {
-    width: 300px;
-    height: auto;
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
     margin: 0 auto;
     line-height: 1.5;
+    padding: 50px 35px;
     h1 {
       font-family: $font-stack;
       font-size: 2em;
@@ -37,7 +38,24 @@
   .case-intro {
     width: 100%;
     font-size: 1.2em;
-    background: $about-background;
-    padding: 35px;
   }
+}
+.case-objective {
+  background-color: $light-blue;
+}
+.case-process {
+  background-color: $dark-grey;
+  color: white;
+  position: relative;
+  img {
+    position: absolute;
+    bottom: -80px;
+    right: 10px;
+    z-index: 999;
+    width: 20%;
+    max-width: 400px;
+  }
+}
+.case-result {
+  background-color: $light-blue;
 }
