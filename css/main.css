@@ -344,6 +344,8 @@ header {
   .work-content h2 {
     font-size: 1.2em;
     padding: 15px; }
+  .work-content .info-img {
+    display: flex; }
   .work-content img {
     align-self: center;
     width: 200px;

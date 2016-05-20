@@ -30,6 +30,10 @@ $(document).ready(function() {
     $('.collage').hide();
     $('#sass-info').show();
   });
+  $('#game').click(function() {
+    $('.collage').hide();
+    $('#game-info').show();
+  });
   $('.back').click(function() {
     $('.work-content').hide();
     $('.collage').show();
