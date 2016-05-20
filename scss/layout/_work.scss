@@ -1,5 +1,3 @@
-
-
 #section1 {
   .fp-tableCell {
     padding: 25px 0;
@@ -12,6 +10,7 @@
   }
 }
 .work-heading {
+  position: relative;
   max-width: 1200px;
   display: flex;
   flex-flow: column;
@@ -27,12 +26,15 @@
     margin: 20px 0;
     @media screen and (min-width: 550px) {
       width: 200px;
-      height: 200px;
+      height: auto;
+
     }
     @media screen and (min-width: 990px) {
       margin: 50px;
       width: 400px;
       height: auto;
+      // position: absolute;
+
     }
   }
   .collage {
@@ -58,6 +60,7 @@
     .work-name:hover {
       color: $shadow-color;
       text-decoration: line-through;
+      cursor: pointer;
     }
     @media screen and (min-width: 990px) {
       align-content: center;
@@ -93,16 +96,17 @@
   }
   img{
     align-self: center;
-    width: auto;
-    height: 200px;
+    width: 200px;
+    // height: auto;
+    margin: 20px 0;
     @media screen and (min-width: 760px) {
-      width: 50%;
-      height: auto;
+      width: 300px;
+      // height: auto;
     }
   }
   span {
+    padding-right: 50px;
     align-self: flex-end;
-    padding: 50px;
   }
   p {
     line-height: 1.5;

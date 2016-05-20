@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 .container, header .intro {
-  font-family: "Colab Light", sans-serif;
+  font-family: "Genome Thin", sans-serif;
   font-weight: 200; }
 
 .about-resume #resume, .contact-content #email {
@@ -136,17 +136,11 @@ header .neonSign #hello, header .neonSign #h {
   font-family: 'Neon Lights';
   src: url("../fonts/neonlights-webfont.woff") format("woff"); }
 @font-face {
-  font-family: 'Colab Light';
-  src: url("../fonts/Colablig.off") format("off"); }
+  font-family: 'Genome Thin';
+  src: url("../fonts/genome-thin-webfont.woff") format("woff"); }
 @font-face {
   font-family: 'Colab Thin';
-  src: url("../fonts/Colabthi.off") format("off"); }
-@font-face {
-  font-family: "Hiragino Sans GB W3";
-  src: url("3b2646a48566403a55f62ceddbecbe18.eot");
-  /* IE9*/
-  src: url("../fonts/3b2646a48566403a55f62ceddbecbe18.ttf") format("truetype"), url("3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB W3") format("svg");
-  /* iOS 4.1- */ }
+  src: url("../fonts/ColabThi-webfont.woff") format("woff"); }
 * {
   box-sizing: border-box; }
   * a {
@@ -157,7 +151,8 @@ header .neonSign #hello, header .neonSign #h {
   min-width: 320px;
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  background: #fefdfb; }
 
 .page-content {
   flex: 1; }
@@ -183,7 +178,7 @@ header .neonSign #hello, header .neonSign #h {
     color: white; }
 
 #menu {
-  background: white;
+  background: #fefdfb;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -279,6 +274,7 @@ header {
       vertical-align: middle; } }
 
 .work-heading {
+  position: relative;
   max-width: 1200px;
   display: flex;
   flex-flow: column;
@@ -295,7 +291,7 @@ header {
     @media screen and (min-width: 550px) {
       .work-heading #work-image {
         width: 200px;
-        height: 200px; } }
+        height: auto; } }
     @media screen and (min-width: 990px) {
       .work-heading #work-image {
         margin: 50px;
@@ -321,7 +317,8 @@ header {
           font-size: 2em; } }
     .work-heading .collage .work-name:hover {
       color: #DC00A0;
-      text-decoration: line-through; }
+      text-decoration: line-through;
+      cursor: pointer; }
     @media screen and (min-width: 990px) {
       .work-heading .collage {
         align-content: center;
@@ -349,15 +346,14 @@ header {
     padding: 15px; }
   .work-content img {
     align-self: center;
-    width: auto;
-    height: 200px; }
+    width: 200px;
+    margin: 20px 0; }
     @media screen and (min-width: 760px) {
       .work-content img {
-        width: 50%;
-        height: auto; } }
+        width: 300px; } }
   .work-content span {
-    align-self: flex-end;
-    padding: 50px; }
+    padding-right: 50px;
+    align-self: flex-end; }
   .work-content p {
     line-height: 1.5;
     margin-left: 15px; }

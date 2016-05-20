@@ -1,6 +1,7 @@
 ////fonts
 $font-stack: 'DIN Pro Condensed Regular', monospace;
-$text-font: 'Colab Light', sans-serif;
+$text-font: 'Genome Thin', sans-serif;
+$text-light-font: 'Colab Thin', sans-serif;
 $hello-font: 'Neon Lights', sans-serif;
 $light-font: 'DIN Pro Condensed Light', monospace;
 //////colors
@@ -23,7 +24,7 @@ $shadow-color: #DC00A0;
 
 $light-grey: #e9e9e9;
 
-$about-background: #ebeffb;
+$off-white: #fefdfb;
 
 %text {
   font-family: $text-font;

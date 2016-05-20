@@ -17,22 +17,16 @@
 
 
   @font-face {
-    font-family: 'Colab Light';
-    src: url('../fonts/Colablig.off') format('off');
+    font-family: 'Genome Thin';
+    src: url('../fonts/genome-thin-webfont.woff') format('woff');
   }
 
    @font-face {
      font-family: 'Colab Thin';
-     src: url('../fonts/Colabthi.off') format('off');
+     src: url('../fonts/ColabThi-webfont.woff') format('woff');
    }
 
-@font-face {
-  font-family: "Hiragino Sans GB W3";
-  src: url("3b2646a48566403a55f62ceddbecbe18.eot"); /* IE9*/
-  src:
-  url("../fonts/3b2646a48566403a55f62ceddbecbe18.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB W3") format("svg"); /* iOS 4.1- */
-}
+
 * {
   box-sizing: border-box;
   a {
@@ -47,7 +41,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
+  background: $off-white;
 }
 
 .page-content {

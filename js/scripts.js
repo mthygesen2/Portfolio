@@ -4,16 +4,9 @@ $(document).ready(function() {
 		menu: '#menu',
 		scrollingSpeed: 1000,
     scrollOverflow: true,
-    // responsiveWidth: 414px,
-    // autoScrolling:false
+    responsiveWidth: 414
+    // responsiveHeight:
   });
-  $(window).scroll(function () {
-    if ($('#section0').scrollTop() == 0) {
-    $('#menu img').attr('src', 'img/logo-white.png');
-  } else {
-    $('#menu img').attr('src', 'img/logo.png');
-  }
-});
 
   // hiding and showing on work page
   $('.work-content').hide();
@@ -29,9 +22,9 @@ $(document).ready(function() {
     $('.collage').hide();
     $('#git-info').show();
   });
-  $('#soon').click(function() {
+  $('#noble').click(function() {
     $('.collage').hide();
-    $('#soon-info').show();
+    $('#noble-info').show();
   });
   $('.back').click(function() {
     $('.work-content').hide();
