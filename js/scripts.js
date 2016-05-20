@@ -3,39 +3,39 @@ $(document).ready(function() {
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 		menu: '#menu',
 		scrollingSpeed: 1000,
-    scrollOverflow: true
+    scrollOverflow: true,
+    // responsiveWidth: 414px,
+    // autoScrolling:false
   });
+  $(window).scroll(function () {
+    if ($('#section0').scrollTop() == 0) {
+    $('#menu img').attr('src', 'img/logo-white.png');
+  } else {
+    $('#menu img').attr('src', 'img/logo.png');
+  }
+});
+
+  // hiding and showing on work page
   $('.work-content').hide();
   $('#wild').click(function() {
-    $('.work-heading').hide('slide', {direction: 'up'}, 1000);
-    $('#wild-info').show('blind', {direction: 'down'}, 2000);
-  });
-  $('.back').click(function() {
-    $('#wild-info').hide('slide', {direction: 'down'}, 1000);
-    $('.work-heading').show('slide', {direction: 'up'}, 1000);
+    $('.collage').hide();
+    $('#wild-info').show();
   });
   $('#taproom').click(function() {
-    $('.work-heading').hide('slide', {direction: 'up'}, 1000);
-    $('#taproom-info').show('blind', {direction: 'down'}, 2000);
-  });
-  $('.back').click(function() {
-    $('#taproom-info').hide('slide', {direction: 'down'}, 1000);
-    $('.work-heading').show('slide', {direction: 'up'}, 1000);
+    $('.collage').hide();
+    $('#taproom-info').show();
   });
   $('#git').click(function() {
-    $('.work-heading').hide('slide', {direction: 'up'}, 1000);
-    $('#git-info').show('blind', {direction: 'down'}, 2000);
-  });
-  $('.back').click(function() {
-    $('#git-info').hide('slide', {direction: 'down'}, 1000);
-    $('.work-heading').show('slide', {direction: 'up'}, 1000);
+    $('.collage').hide();
+    $('#git-info').show();
   });
   $('#soon').click(function() {
-    $('.work-heading').hide('slide', {direction: 'up'}, 1000);
-    $('#soon-info').show('blind', {direction: 'down'}, 2000);
+    $('.collage').hide();
+    $('#soon-info').show();
   });
   $('.back').click(function() {
-    $('#soon-info').hide('slide', {direction: 'down'}, 1000);
-    $('.work-heading').show('slide', {direction: 'up'}, 1000);
+    $('.work-content').hide();
+    $('.collage').show();
   });
+
 });

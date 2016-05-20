@@ -18,7 +18,8 @@
     <div class="container">
 <!-- NAVBAR -->
       <ul id="menu">
-        <img src="img/logo.png" alt="mt logo" />
+        <!-- <img id="whiteLogo" src="img/logo-white.png" alt="mt logo" /> -->
+        <img id="blackLogo" src="img/logo.png" alt="mt logo" />
         <li data-menuanchor="secondPage"><a href="#secondPage">work</a></li>
         <span>//</span>
         <li data-menuanchor="3rdPage"><a href="#3rdPage">about</a></li>
@@ -50,12 +51,24 @@
           <div class="work-heading">
               <img id="work-image" src="img/work1.png" alt="work" />
               <div class="collage">
-                <img id="taproom" src="img/Taproom.png" width="400" height="300"  alt="Tap Room App" />
-                <img id="wild" src="img/wild.png"width="400" height="300"  alt="Hello Wild App" />
-                <img id="git" src="img/git.png" width="400" height="300" alt="Git Hub App" />
-                <img id="soon" src="img/Coming Soon .png" width="300" height="300" alt="Coming Soon" />
+                <div id="wild" class="work-name">
+                  <h2>Hello Wild</h2>
+                  <h3>Responsive Design</h3>
+                </div>
+                <div id="taproom" class="work-name">
+                  <h2>Taproom</h2>
+                  <h3>JavaScript Angular</h3>
+                </div>
+                <div id="git" class="work-name">
+                  <h2>GitHub Search</h2>
+                  <h3>JavaScript API</h3>
+                </div>
+                <div id="soon" class="work-name">
+                  <h2>Coming Soon</h2>
+                  <h3>Coming Soon</h3>
+                </div>
               </div>
-          </div>
+          <!-- </div> -->
 <!-- WORK GALLERY ENDS -->
 <!-- WORK CONTENT ALL -->
           <div id="taproom-info"class="work-content">
@@ -91,10 +104,10 @@
             <span class="back">back</span>
           </div>
         </div>
+      </div>
 <!-- WORK CONTENT ALL END -->
 <!-- ABOUT -->
         <div id="section2" class="section">
-          <a name="about"></a>
           <div class="top">
             <h2 id="about-heading">about</h2>
             <img id="mao" src="img/mao1.jpg" alt="Mao" />
@@ -127,15 +140,15 @@
         <div id="section3" class="section heading">
           <h2>contact</h2>
           <div class="contact-content">
-            <div class="icons">
-              <a href="https://github.com/mthygesen2" target="_blank"><img src="img/git1.png" alt="GitHub" /></a>
-              <a href="https://www.linkedin.com/in/maothygesen" target="_blank"><img src="img/in.png" alt="LinkedIn" /></a>
-            </div>
             <p>
               Drop me a line!
             </p>
             <a href="mailto:maothygesen@gmail.com" id="email" target="_blank">maothygesen@gmail.com</a>
-          </div>
+            <div class="icons">
+              <a href="https://github.com/mthygesen2" target="_blank"><img src="img/git1.png" alt="GitHub" /></a>
+              <a href="https://www.linkedin.com/in/maothygesen" target="_blank"><img src="img/in.png" alt="LinkedIn" /></a>
+            </div>
+            </div>
         </div>
 <!-- CONTACT END -->
       </div>

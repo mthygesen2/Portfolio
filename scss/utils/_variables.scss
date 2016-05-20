@@ -2,6 +2,7 @@
 $font-stack: 'DIN Pro Condensed Regular', monospace;
 $text-font: 'Colab Light', sans-serif;
 $hello-font: 'Neon Lights', sans-serif;
+$light-font: 'DIN Pro Condensed Light', monospace;
 //////colors
 
 $mid-blue: #6683E1;
@@ -43,9 +44,9 @@ $about-background: #ebeffb;
   height: 100px;
   text-align: center;
   font-size: 3em;
-  color: $mid-blue;
+  color: white;
   padding-top: 8px;
-  font-family: $font-stack;
+  font-family: $light-font;
 }
 
  %hello {
@@ -60,4 +61,11 @@ $about-background: #ebeffb;
 
 %hover {
   text-decoration: underline solid $shadow-color;
+}
+
+%pinkTop {
+  border-top: 5px solid $shadow-color;
+}
+%blueTop {
+  border-top: 5px solid $mid-blue;
 }

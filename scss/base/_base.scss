@@ -4,6 +4,11 @@
   font-style: normal;
   src: local('DIN Pro Condensed Regular'), url('../fonts/DINPro-Cond.woff') format('woff');
 }
+@font-face {
+  font-family: 'DIN Pro Condensed Light';
+  font-style: normal;
+  src: local('DIN Pro Condensed Light'), url('../fonts/DINPro-CondLight.woff') format('woff');
+}
 
  @font-face {
    font-family: 'Neon Lights';

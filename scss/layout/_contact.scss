@@ -1,6 +1,4 @@
 #section3 {
-  background: url("../img/fish.png") bottom;
-  background-size: cover;
   .fp-tableCell {
     vertical-align: top;
   }
@@ -41,14 +39,6 @@
   }
 }
 
-// #contact-image {
-//   @media  screen and (min-width: 759px) {
-//     align-self: center;
-//     width: 200px;
-//     height: auto;
-//     z-index: 999;
-//   }
-// }
 
 //heading for contact///
 .heading {
@@ -62,7 +52,7 @@
     @extend %heading;
     @media screen and (min-width: 415px) {
       font-size: 5em;
-      height: 300px;
+      height: 150px;
 
     }
   }

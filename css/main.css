@@ -62,9 +62,9 @@ table {
   height: 100px;
   text-align: center;
   font-size: 3em;
-  color: #6683E1;
+  color: white;
   padding-top: 8px;
-  font-family: "DIN Pro Condensed Regular", monospace; }
+  font-family: "DIN Pro Condensed Light", monospace; }
 
 header .neonSign #hello, header .neonSign #h {
   padding-left: 15px;
@@ -74,6 +74,12 @@ header .neonSign #hello, header .neonSign #h {
   -webkit-text-stroke-color: #ff76da;
   font-family: "Neon Lights", sans-serif;
   text-shadow: 0px 0px 25px #DC00A0, 20px 0 50px #DC00A0, -20px 0 50px #DC00A0, 0px -18px 70px #DC00A0, 0px 18px 70px #DC00A0; }
+
+#section1 .fp-tableCell {
+  border-top: 5px solid #DC00A0; }
+
+#section2 {
+  border-top: 5px solid #6683E1; }
 
 @keyframes blink {
   0% {
@@ -122,6 +128,10 @@ header .neonSign #hello, header .neonSign #h {
   font-family: 'DIN Pro Condensed Regular';
   font-style: normal;
   src: local("DIN Pro Condensed Regular"), url("../fonts/DINPro-Cond.woff") format("woff"); }
+@font-face {
+  font-family: 'DIN Pro Condensed Light';
+  font-style: normal;
+  src: local("DIN Pro Condensed Light"), url("../fonts/DINPro-CondLight.woff") format("woff"); }
 @font-face {
   font-family: 'Neon Lights';
   src: url("../fonts/neonlights-webfont.woff") format("woff"); }
@@ -260,65 +270,65 @@ header {
     margin: 0 auto;
     margin-top: 20px; }
 
-#section1 {
-  background-color: #112739;
-  padding-bottom: 100px; }
+#section1 .fp-tableCell {
+  padding: 25px 0;
+  vertical-align: top; }
   @media screen and (min-width: 415px) {
-    #section1 {
-      padding: 0px; } }
-  #section1 .fp-tableCell {
-    padding: 25px 0;
-    border-top: 5px solid #DC00A0;
-    vertical-align: top; }
-    @media screen and (min-width: 415px) {
-      #section1 .fp-tableCell {
-        padding: 0px;
-        vertical-align: middle; } }
+    #section1 .fp-tableCell {
+      padding: 0px;
+      vertical-align: middle; } }
 
 .work-heading {
   max-width: 1200px;
-  background-color: #112739;
   display: flex;
   flex-flow: column;
   justify-content: center; }
   @media screen and (min-width: 990px) {
     .work-heading {
-      flex-flow: row; } }
+      flex-flow: row;
+      margin: 0 auto; } }
   .work-heading #work-image {
     align-self: center;
     width: 150px;
     height: 150px;
     margin: 20px 0; }
+    @media screen and (min-width: 550px) {
+      .work-heading #work-image {
+        width: 200px;
+        height: 200px; } }
     @media screen and (min-width: 990px) {
       .work-heading #work-image {
         margin: 50px;
-        width: 200px;
-        height: 200px; } }
+        width: 400px;
+        height: auto; } }
   .work-heading .collage {
-    background-color: #112739;
+    width: auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    max-height: 700px; }
+    flex-flow: column;
+    margin: 0 auto; }
+    @media screen and (min-width: 990px) {
+      .work-heading .collage {
+        margin: 50px; } }
+    .work-heading .collage div {
+      padding: 10px; }
+      @media screen and (min-width: 990px) {
+        .work-heading .collage div {
+          padding: 20px; } }
+    .work-heading .collage div h2 {
+      font-size: 1.5em; }
+      @media screen and (min-width: 990px) {
+        .work-heading .collage div h2 {
+          font-size: 2em; } }
+    .work-heading .collage .work-name:hover {
+      color: #DC00A0;
+      text-decoration: line-through; }
     @media screen and (min-width: 990px) {
       .work-heading .collage {
         align-content: center;
         width: 700px; } }
-    .work-heading .collage img {
-      margin: 15px;
-      border: 2px solid white;
-      width: 150px;
-      height: 150px; }
-      @media screen and (min-width: 415px) {
-        .work-heading .collage img {
-          width: 300px;
-          height: 300px; } }
-      @media screen and (min-width: 990px) {
-        .work-heading .collage img {
-          border: 4px solid white; } }
 
 .work-content {
-  color: white;
+  color: black;
   flex-flow: column;
   display: flex;
   align-content: center; }
@@ -331,7 +341,7 @@ header {
     text-decoration: underline;
     letter-spacing: 2px;
     padding: 15px;
-    color: white; }
+    color: black; }
     .work-content a:hover {
       color: #DC00A0; }
   .work-content h2 {
@@ -353,8 +363,7 @@ header {
     margin-left: 15px; }
 
 #section2 {
-  max-width: 1000px;
-  margin: 0 auto; }
+  width: 100%; }
   #section2 .fp-tableCell {
     vertical-align: top; }
 
@@ -363,8 +372,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: 10px; }
+  @media screen and (min-width: 990px) {
+    .top {
+      margin-top: 40px; } }
   .top #about-heading {
-    font-family: "DIN Pro Condensed Regular", monospace;
+    font-family: "DIN Pro Condensed Light", monospace;
     text-align: center;
     font-size: 3.5em;
     padding-right: 15px; }
@@ -378,9 +390,12 @@ header {
   max-width: 600px;
   margin: 0 auto; }
   .about-content p, .about-content h3 {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.2;
     padding: 10px; }
+    @media screen and (min-width: 414px) {
+      .about-content p, .about-content h3 {
+        font-size: 1.2em; } }
   .about-content ul {
     line-height: 1.2; }
     @media screen and (min-width: 414px) {
@@ -389,11 +404,15 @@ header {
 
 #mao {
   align-self: center;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   max-width: 200px;
   border-radius: 50%;
   border: 1px solid #232C33; }
+  @media screen and (min-width: 414px) {
+    #mao {
+      width: 50%;
+      height: 50%; } }
 
 .aboutImages {
   display: none; }
@@ -404,7 +423,8 @@ header {
   .aboutImages img {
     width: 30%;
     height: 30%;
-    padding: 5px; }
+    padding: 5px;
+    max-width: 300px; }
 
 .about-resume {
   text-align: center; }
@@ -421,11 +441,8 @@ header {
   .about-resume #resume:hover {
     color: #1944D8; }
 
-#section3 {
-  background: url("../img/fish.png") bottom;
-  background-size: cover; }
-  #section3 .fp-tableCell {
-    vertical-align: top; }
+#section3 .fp-tableCell {
+  vertical-align: top; }
 
 .contact-content {
   height: 400px;
@@ -465,7 +482,7 @@ header {
   @media screen and (min-width: 415px) {
     .heading h2 {
       font-size: 5em;
-      height: 300px; } }
+      height: 150px; } }
 
 .wide {
   width: 30%;

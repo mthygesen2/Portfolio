@@ -1,22 +1,20 @@
 #section2 {
-// background: url("../img/pattern.png");
-// background-size: cover;
-max-width: 1000px;
-margin: 0 auto;
-.fp-tableCell {
-  vertical-align: top;
-}
+  @extend %blueTop;
+  width: 100%;
+  .fp-tableCell {
+    vertical-align: top;
+  }
 }
 .top {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  // @media screen and (min-width: 415px) {
-  //   margin-top: 150px;
-  // }
+  @media screen and (min-width: 990px) {
+    margin-top: 40px;
+  }
   #about-heading {
-    font-family: $font-stack;
+    font-family: $light-font;
     text-align: center;
     font-size: 3.5em;
     padding-right: 15px;
@@ -31,9 +29,12 @@ margin: 0 auto;
   max-width: 600px;
   margin: 0 auto;
   p, h3 {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.2;
     padding: 10px;
+    @media screen and (min-width: 414px){
+      font-size: 1.2em;
+    }
   }
   ul {
     line-height: 1.2;
@@ -44,29 +45,31 @@ margin: 0 auto;
 }
 #mao {
   align-self: center;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   max-width: 200px;
   border-radius: 50%;
   border: 1px solid $dark-grey;
+  @media screen and (min-width: 414px) {
+    width: 50%;
+    height: 50%;
+  }
 }
 .aboutImages {
   display: none;
   @media screen and (min-height: 900px) {
     display: flex;
     justify-content: center;
-
   }
   img {
     width: 30%;
     height: 30%;
     padding: 5px;
+    max-width: 300px;
   }
 }
 .about-resume {
   text-align: center;
-  // margin-top: 25px;
-  // padding: 20px 0;
   #resume {
     @extend %button;
     align-self: center;
@@ -83,25 +86,3 @@ margin: 0 auto;
     color: $bright-blue;
   }
 }
-
-//
-// .skills {
-//   text-align: center;
-//   display: flex;
-//   flex-flow: column;
-//   h3{
-//     color: $bright-blue;
-//     font-size: 2em;
-//   }
-//   ul {
-//     margin: 5px;
-//     display: flex;
-//   }
-//   .js {
-//     display: flex;
-//     flex-flow: column;
-//     li {
-//       align-self: flex-start;
-//     }
-//   }
-// }
