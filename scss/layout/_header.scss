@@ -21,6 +21,7 @@ header {
     #hello {
       @extend %hello;
       animation: blink linear 4s;
+       -webkit-animation: blink linear 4s;
       padding: 0;
       @media screen and (min-width: 800px) {
         font-size: 8em;
@@ -29,6 +30,7 @@ header {
     #h {
       @extend %hello;
       animation: blink2 linear 4s;
+      -webkit-animation: blink2 linear 4s;
       @media screen and (min-width: 800px) {
         font-size: 8em;
       }
