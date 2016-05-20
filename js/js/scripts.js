@@ -22,13 +22,13 @@ $(document).ready(function() {
     $('.collage').hide();
     $('#git-info').show();
   });
-  $('#noble').click(function() {
-    $('.collage').hide();
-    $('#noble-info').show();
-  });
   $('#sass').click(function() {
     $('.collage').hide();
     $('#sass-info').show();
+  });
+  $('#noble').click(function() {
+    $('.collage').hide();
+    $('#noble-info').show();
   });
   $('.back').click(function() {
     $('.work-content').hide();
