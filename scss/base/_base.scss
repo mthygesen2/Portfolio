@@ -26,7 +26,20 @@
      src: url('../fonts/ColabThi-webfont.woff') format('woff');
    }
 
+   @font-face {
+       font-family: 'Montserrat Light';
+       src: url('../fonts/montserrat-light-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
 
+   }
+   @font-face {
+       font-family: 'Montserrat Hairline';
+       src: url('../fonts/montserrat-hairline-webfont.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+
+   }
 * {
   box-sizing: border-box;
   a {

@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 .container, header .intro {
-  font-family: "Genome Thin", sans-serif;
+  font-family: "Montserrat Hairline", sans-serif;
   font-weight: 200; }
 
 .about-resume #resume, .contact-content #email {
@@ -141,6 +141,16 @@ header .neonSign #hello, header .neonSign #h {
 @font-face {
   font-family: 'Colab Thin';
   src: url("../fonts/ColabThi-webfont.woff") format("woff"); }
+@font-face {
+  font-family: 'Montserrat Light';
+  src: url("../fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat Hairline';
+  src: url("../fonts/montserrat-hairline-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   box-sizing: border-box; }
   * a {
@@ -227,12 +237,18 @@ header {
       display: none; }
     header .neonSign #hello {
       animation: blink linear 4s;
+      -webkit-animation: blink linear 4s;
+      -moz-animation: blink linear 4s;
+      -o-animation: blink linear 4s;
       padding: 0; }
       @media screen and (min-width: 800px) {
         header .neonSign #hello {
           font-size: 8em; } }
     header .neonSign #h {
-      animation: blink2 linear 4s; }
+      animation: blink2 linear 4s;
+      -webkit-animation: blink2 linear 4s;
+      -moz-animation: blink2 linear 4s;
+      -o-animation: blink2 linear 4s; }
       @media screen and (min-width: 800px) {
         header .neonSign #h {
           font-size: 8em; } }
@@ -300,26 +316,7 @@ header {
       margin: 0 auto; } }
   @media screen and (min-width: 990px) {
     .work-heading {
-      flex-flow: row;
-      margin: 0 auto; } }
-  @media screen and (min-width: 990px) {
-    .work-heading .work-image {
-      position: absolute;
-      left: 50px;
-      bottom: 20%; } }
-  .work-heading #work-image {
-    width: 150px;
-    height: 150px;
-    margin: 20px 0; }
-    @media screen and (min-width: 550px) {
-      .work-heading #work-image {
-        width: 200px;
-        height: auto; } }
-    @media screen and (min-width: 990px) {
-      .work-heading #work-image {
-        margin: 50px;
-        width: 400px;
-        height: auto; } }
+      flex-flow: row; } }
   .work-heading .collage {
     width: auto;
     display: flex;
@@ -342,6 +339,8 @@ header {
       @media screen and (min-width: 990px) {
         .work-heading .collage div h2 {
           font-size: 2em; } }
+    .work-heading .collage .work-name h3 {
+      font-size: 1.2em; }
     .work-heading .collage .work-name:hover {
       color: #DC00A0;
       text-decoration: line-through;
@@ -355,14 +354,17 @@ header {
   color: black;
   flex-flow: column;
   display: flex;
-  align-content: center; }
+  align-content: center;
+  margin-top: 250px;
+  padding: 15px; }
   @media screen and (min-width: 768px) {
     .work-content {
       margin: 0 auto;
       margin-left: 375px; } }
   @media screen and (min-width: 990px) {
     .work-content {
-      margin-left: 500px; } }
+      margin-left: 500px;
+      height: 100vh; } }
   .work-content #back {
     font-size: 2em;
     font-family: "DIN Pro Condensed Regular", monospace; }
@@ -403,9 +405,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px; }
+  padding: 30px 10px 0px 10px; }
   @media screen and (min-width: 990px) {
     .top {
+      padding: 0px;
       margin-top: 40px; } }
   .top #about-heading {
     font-family: "DIN Pro Condensed Light", monospace;
@@ -487,7 +490,7 @@ header {
     justify-content: center; }
     @media screen and (min-width: 760px) {
       .contact-content .icons {
-        padding-bottom: 20px; } }
+        padding-top: 20px; } }
     .contact-content .icons a {
       padding: 10px 10px 0 10px; }
     .contact-content .icons img {

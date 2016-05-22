@@ -35,32 +35,31 @@
   }
   @media screen and (min-width: 990px) {
     flex-flow: row;
-    margin: 0 auto;
   }
-  .work-image {
-    @media screen and (min-width: 990px) {
-      position: absolute;
-      left: 50px;
-      bottom: 20%;
-    }
-  }
-  #work-image {
-    width: 150px;
-    height: 150px;
-    margin: 20px 0;
-    @media screen and (min-width: 550px) {
-      width: 200px;
-      height: auto;
-
-    }
-    @media screen and (min-width: 990px) {
-      margin: 50px;
-      width: 400px;
-      height: auto;
-
-
-    }
-  }
+  // .work-image {
+  //   @media screen and (min-width: 990px) {
+  //     position: absolute;
+  //     left: 50px;
+  //     bottom: 20%;
+  //   }
+  // }
+  // #work-image {
+  //   width: 150px;
+  //   height: 150px;
+  //   margin: 20px 0;
+  //   @media screen and (min-width: 550px) {
+  //     width: 200px;
+  //     height: auto;
+  //
+  //   }
+  //   @media screen and (min-width: 990px) {
+  //     margin: 50px;
+  //     width: 400px;
+  //     height: auto;
+  //
+  //
+  //   }
+  // }
   .collage {
     width: auto;
     display: flex;
@@ -86,6 +85,9 @@
         font-size: 2em;
       }
     }
+    .work-name h3 {
+      font-size: 1.2em;
+    }
     .work-name:hover {
       color: $shadow-color;
       text-decoration: line-through;
@@ -103,12 +105,15 @@
   flex-flow: column;
   display: flex;
   align-content: center;
+  margin-top: 250px; //for the mobile not to overlap work bg img//
+  padding: 15px;
   @media screen and (min-width: 768px) {
     margin: 0 auto;
     margin-left: 375px;
   }
   @media screen and (min-width: 990px) {
     margin-left: 500px;
+      height: 100vh;
   }
   #back {
     font-size: 2em;
