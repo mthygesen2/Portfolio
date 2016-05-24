@@ -283,7 +283,7 @@ header {
 
 #section1 {
   background: url("../img/work1.png") no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 5%;
   background-size: 200px;
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
@@ -356,7 +356,7 @@ header {
   display: flex;
   align-content: center;
   margin-top: 250px;
-  padding: 15px; }
+  padding: 15px 15px 50px 15px; }
   @media screen and (min-width: 768px) {
     .work-content {
       margin: 0 auto;
@@ -381,14 +381,19 @@ header {
     font-size: 1.2em;
     padding: 15px; }
   .work-content .info-img {
-    display: flex; }
+    display: flex;
+    flex-flow: column; }
   .work-content img {
     align-self: center;
-    width: 200px;
+    width: 80%;
     margin: 20px 0; }
     @media screen and (min-width: 760px) {
       .work-content img {
         width: 300px; } }
+  .work-content #wild-img {
+    width: 100%; }
+  .work-content #game-img, .work-content #taproom-img {
+    width: 80%; }
   .work-content span {
     padding-right: 50px;
     align-self: flex-end; }

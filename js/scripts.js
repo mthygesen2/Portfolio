@@ -2,10 +2,10 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 		menu: '#menu',
-		scrollingSpeed: 1000,
+		scrollingSpeed: 700,
     scrollOverflow: true,
-    responsiveWidth: 414
-    // responsiveHeight:
+    responsiveWidth: 768,
+    // responsiveHeight:1060
   });
 
   // hiding and showing on work page

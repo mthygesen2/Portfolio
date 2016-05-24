@@ -1,6 +1,6 @@
 #section1 {
     background: url("../img/work1.png") no-repeat;
-    background-position: 50% 10%;
+    background-position: 50% 5%;
     background-size: 200px;
     margin: 0 auto;
     @extend %pinkTop;
@@ -37,30 +37,7 @@
   @media screen and (min-width: 990px) {
     flex-flow: row;
   }
-  // .work-image {
-  //   @media screen and (min-width: 990px) {
-  //     position: absolute;
-  //     left: 50px;
-  //     bottom: 20%;
-  //   }
-  // }
-  // #work-image {
-  //   width: 150px;
-  //   height: 150px;
-  //   margin: 20px 0;
-  //   @media screen and (min-width: 550px) {
-  //     width: 200px;
-  //     height: auto;
-  //
-  //   }
-  //   @media screen and (min-width: 990px) {
-  //     margin: 50px;
-  //     width: 400px;
-  //     height: auto;
-  //
-  //
-  //   }
-  // }
+
   .collage {
     width: auto;
     display: flex;
@@ -107,7 +84,7 @@
   display: flex;
   align-content: center;
   margin-top: 250px; //for the mobile not to overlap work bg img//
-  padding: 15px;
+  padding: 15px 15px 50px 15px;
   @media screen and (min-width: 768px) {
     margin: 0 auto;
     margin-left: 375px;
@@ -138,15 +115,21 @@
   }
   .info-img {
     display: flex;
+    flex-flow: column;
   }
   img{
     align-self: center;
-    width: 200px;
-    // height: auto;
+    width: 80%;
     margin: 20px 0;
     @media screen and (min-width: 760px) {
       width: 300px;
     }
+  }
+  #wild-img {
+    width: 100%;
+  }
+  #game-img, #taproom-img{
+    width: 80%;
   }
   span {
     padding-right: 50px;
