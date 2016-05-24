@@ -10,7 +10,7 @@
     }
     @media screen and (min-width: 990px) {
       background-size: 300px;
-      background-position: 200px center;
+      background-position: 100px center;
     }
     @media screen and (min-width: 1200px) {
       background-position: 225px center;
@@ -19,9 +19,8 @@
     padding: 25px 0;
     vertical-align: top;
     @media screen and (min-width: 768px) {
-      padding: 0px;
-      vertical-align: middle;
-
+        vertical-align: middle;
+        overflow: scroll;
     }
   }
 }
@@ -49,7 +48,7 @@
       margin-left: 375px;
     }
     @media screen and (min-width: 990px) {
-      margin-left: 500px;
+      margin-left: 400px;
     }
     div {
       padding: 10px;
@@ -88,14 +87,20 @@
   @media screen and (min-width: 768px) {
     margin: 0 auto;
     margin-left: 375px;
+    padding: 0px 0px 150px 0px;
   }
   @media screen and (min-width: 990px) {
-    margin-left: 500px;
-      height: 100vh;
+    margin-left: 400px;
+    // height: 100vh;
   }
-  #back {
+  @media screen and (min-width: 1000px) {
+    margin-left: 520px;
+  }
+  .back {
     font-size: 2em;
     font-family: $font-stack;
+    padding-right: 50px;
+    align-self: flex-end;
   }
   a{
     font-size: 2.1em;
@@ -115,7 +120,15 @@
   }
   .info-img {
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    div {
+      display: flex;
+      flex-flow: column;
+      img {
+        width: 250px;
+        padding: 0 50px;
+      }
+    }
   }
   img{
     align-self: center;
@@ -131,10 +144,7 @@
   #game-img, #taproom-img{
     width: 80%;
   }
-  span {
-    padding-right: 50px;
-    align-self: flex-end;
-  }
+
   p {
     line-height: 1.5;
     margin-left: 15px;

@@ -5,7 +5,10 @@ $(document).ready(function() {
 		scrollingSpeed: 700,
     scrollOverflow: true,
     responsiveWidth: 768,
-    // responsiveHeight:1060
+    css3: true,
+    scrollOverflow: true,
+    easing: 'easeInQuart',
+    easingcss3: 'ease',
   });
 
   // hiding and showing on work page

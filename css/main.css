@@ -293,7 +293,7 @@ header {
   @media screen and (min-width: 990px) {
     #section1 {
       background-size: 300px;
-      background-position: 200px center; } }
+      background-position: 100px center; } }
   @media screen and (min-width: 1200px) {
     #section1 {
       background-position: 225px center; } }
@@ -302,8 +302,8 @@ header {
     vertical-align: top; }
     @media screen and (min-width: 768px) {
       #section1 .fp-tableCell {
-        padding: 0px;
-        vertical-align: middle; } }
+        vertical-align: middle;
+        overflow: scroll; } }
 
 .work-heading {
   max-width: 1200px;
@@ -328,7 +328,7 @@ header {
         margin-left: 375px; } }
     @media screen and (min-width: 990px) {
       .work-heading .collage {
-        margin-left: 500px; } }
+        margin-left: 400px; } }
     .work-heading .collage div {
       padding: 10px; }
       @media screen and (min-width: 990px) {
@@ -360,14 +360,19 @@ header {
   @media screen and (min-width: 768px) {
     .work-content {
       margin: 0 auto;
-      margin-left: 375px; } }
+      margin-left: 375px;
+      padding: 0px 0px 150px 0px; } }
   @media screen and (min-width: 990px) {
     .work-content {
-      margin-left: 500px;
-      height: 100vh; } }
-  .work-content #back {
+      margin-left: 400px; } }
+  @media screen and (min-width: 1000px) {
+    .work-content {
+      margin-left: 520px; } }
+  .work-content .back {
     font-size: 2em;
-    font-family: "DIN Pro Condensed Regular", monospace; }
+    font-family: "DIN Pro Condensed Regular", monospace;
+    padding-right: 50px;
+    align-self: flex-end; }
   .work-content a {
     font-size: 2.1em;
     font-family: "DIN Pro Condensed Regular", monospace;
@@ -382,7 +387,13 @@ header {
     padding: 15px; }
   .work-content .info-img {
     display: flex;
-    flex-flow: column; }
+    flex-flow: row wrap; }
+    .work-content .info-img div {
+      display: flex;
+      flex-flow: column; }
+      .work-content .info-img div img {
+        width: 250px;
+        padding: 0 50px; }
   .work-content img {
     align-self: center;
     width: 80%;
@@ -394,9 +405,6 @@ header {
     width: 100%; }
   .work-content #game-img, .work-content #taproom-img {
     width: 80%; }
-  .work-content span {
-    padding-right: 50px;
-    align-self: flex-end; }
   .work-content p {
     line-height: 1.5;
     margin-left: 15px; }
